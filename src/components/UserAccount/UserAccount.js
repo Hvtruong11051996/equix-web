@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import Grid from '../Inc/Grid';
-import CanvasGrid from '../Inc/CanvasGrid';
-import Lang from '../Inc/Lang';
-import { hideElement, checkRoleWidget, formatNumberValue, getCsvFile, roundFloat } from '../../helper/functionUtils';
-import * as helper from '../../helper/request';
-import dataStorage from '../../dataStorage';
-import { func } from '../../storage';
-import FilterBox from '../Inc/FilterBox';
-import { emitter, eventEmitter, emitterRefresh, eventEmitterRefresh } from '../../constants/emitter_enum';
-import logger from '../../helper/log';
 import uuidv4 from 'uuid/v4';
-import MapRoleComponent from '../../constants/map_role_component';
 import errorEnum from '../../constants/error_enum';
+import MapRoleComponent from '../../constants/map_role_component';
 import role from '../../constants/role';
 import statusEnum from '../../constants/status_enum';
 import userTypeEnum from '../../constants/user_type_enum';
-import ListCheckBoxComponent from '../Inc/Grid/ListCheckBoxComponent';
-import { getApiFilter } from '../api';
+import dataStorage from '../../dataStorage';
+import { addEventListener, EVENTNAME, removeEventListener } from '../../helper/event';
 import { convertObjFilter } from '../../helper/FilterAndSort';
-import { addEventListener, removeEventListener, EVENTNAME } from '../../helper/event'
-import { TYPE, FORM } from '../Inc/CanvasGrid/Constant/gridConstant';
+import { checkRoleWidget, formatNumberValue, getCsvFile, hideElement } from '../../helper/functionUtils';
+import logger from '../../helper/log';
+import * as helper from '../../helper/request';
+import { getApiFilter } from '../api';
+import CanvasGrid from '../Inc/CanvasGrid';
+import { FORM } from '../Inc/CanvasGrid/Constant/gridConstant';
+import FilterBox from '../Inc/FilterBox';
+import ListCheckBoxComponent from '../Inc/Grid/ListCheckBoxComponent';
+import Lang from '../Inc/Lang';
+import MoreOption from '../Inc/MoreOption';
+import ToggleLine from '../Inc/ToggleLine';
 
 const PAGE_SIZE = 50;
 const PAGINATION_DEFAULT = {
@@ -37,6 +36,7 @@ export class UserAccount extends Component {
     const initState = this.props.loadState();
     checkRoleWidget(this, MapRoleComponent.UserAccount, null, [userTypeEnum.ADVISOR, userTypeEnum.RETAIL]);
     this.error = null;
+    this.collapse = initState.collapse ? 1 : 0
     this.filterText = initState.filterText || '';
     this.setPageUser = null;
     this.setPageAccount = null;
@@ -650,39 +650,58 @@ export class UserAccount extends Component {
     ];
     return columns;
   }
+
+  createagSideButtons = () => {
+    return [
+      {
+        value: 'ExportCSV',
+        label: 'lang_export_csv',
+        callback: () => this.exportCSV()
+      },
+      {
+        value: 'ResetFilter',
+        label: 'lang_reset_filter',
+        callback: () => this.resetFilter(true)
+      },
+      {
+        value: 'Resize',
+        label: 'lang_resize',
+        callback: () => this.autoSize()
+      },
+      {
+        value: 'Columns',
+        label: 'lang_columns',
+        callback: (boundRef) => this.showColumnMenu(boundRef)
+      },
+      {
+        value: 'Filters',
+        label: 'lang_filters',
+        callback: (boundRef) => this.showFilterMenu(boundRef)
+      }
+    ]
+  }
+
+  collapseFunc = (collapse) => {
+    this.collapse = collapse ? 1 : 0
+    this.props.saveState({
+      collapse: this.collapse
+    })
+    this.forceUpdate()
+  }
   render() {
     return (
       <div className='user-client-man-container'>
         {this.renderTabs()}
-        <FilterBox
-          value={this.filterText}
-          onChange={this.onChangeText}
-        />
-        {/* {
-          <Grid {...this.props} key='account'
-            paginate={this.setGridPaginate()}
-            opt={opt => {
-              this.opt = opt;
-              const ins = opt.api.getFilterInstance('status')
-              if (ins) {
-                ins.setModel({ 'value': ['active'], 'operator': 'OR', 'filterType': 'text', 'checkAll': 0 })
-                ins.agParams.filterChangedCallback();
-              }
-            }}
-            // columns={this.state.columns}
-            // getFilterOnSearch={this.getFilterOnSearch}
-            fn={fn => {
-              this.setData2 = fn.setData
-              this.setPinnedBottomRowData = fn.setPinnedBottomRowData
-            }}
-            level={GRID_LEVEL}
-            fnKey={data => data.account_id}
-            rowHeight={48}
-            onRowClicked={this.onRowClicked}
-            getCsvFunction={this.getCsvFunction}
-          />
-        } */}
-
+        <div className={`header-wrap isMoreOption flex ${this.collapse ? 'collapse' : ''}`}>
+          <div className='navbar more' style={{ width: '100%' }}>
+            <FilterBox
+              value={this.filterText}
+              onChange={this.onChangeText}
+            />
+          </div>
+          <MoreOption agSideButtons={this.createagSideButtons()} />
+        </div>
+        <ToggleLine collapse={this.collapse} collapseFunc={this.collapseFunc} />
         <CanvasGrid
           {...this.props}
           id={FORM.USER_MANAGEMENT}
@@ -693,14 +712,13 @@ export class UserAccount extends Component {
           paginate={this.setGridPaginate()}
           fn={fn => {
             this.setData2 = fn.setData
-            // this.setPinnedBottomRowData = fn.setPinnedBottomRowData
+            this.exportCSV = fn.exportCsv
+            this.resetFilter = fn.resetFilter
+            this.autoSize = fn.autoSize
+            this.showColumnMenu = fn.showColumnMenu
+            this.showFilterMenu = fn.showFilterMenu
+            this.autoSize = fn.autoSize
           }}
-          // level={GRID_LEVEL}
-          // fnKey={data => data.account_id}
-          // rowHeight={48}
-          // onRowClicked={this.onRowClicked}
-          // getCsvFunction={this.getCsvFunction}
-
           fnKey={this.fnKey}
           columns={this.getColums()}
           autoFit={true}

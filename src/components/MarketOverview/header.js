@@ -199,7 +199,7 @@ export default class MarketOverview extends React.Component {
                         {this.renderLeft()}
                         {this.renderQuickFilter(true)}
                     </div>
-                    <MoreOption agSideButtons={this.props.createagSideButtons()} />
+                    {/* <MoreOption agSideButtons={this.props.createagSideButtons()} /> */}
                 </div>
                 <ToggleLine collapse={this.collapse} collapseFunc={this.collapseFunc} />
             </React.Fragment>

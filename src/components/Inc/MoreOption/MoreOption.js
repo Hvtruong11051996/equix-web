@@ -1,15 +1,15 @@
 import React from 'react';
-import logger from '../../../helper/log';
-import Lang from '../Lang';
+import actionTypeEnum from '../../../constants/action_type_enum';
+import MapRoleCommponent from '../../../constants/map_role_component';
 import dataStorage from '../../../dataStorage';
+import { checkRole } from '../../../helper/functionUtils';
+import logger from '../../../helper/log';
 import {
     getUpdateWatchlist,
     putData
 } from '../../../helper/request';
 import { registerUser, unregisterUser } from '../../../streaming';
-import actionTypeEnum from '../../../constants/action_type_enum'
-import { checkRole } from '../../../helper/functionUtils';
-import MapRoleCommponent from '../../../constants/map_role_component';
+import Lang from '../Lang';
 import SvgIcon, { path } from '../SvgIcon';
 
 class MoreOption extends React.Component {
@@ -305,7 +305,7 @@ class MoreOption extends React.Component {
                     <span className='iconMoreOption pointer' onMouseEnter={() => this.showOption()}>
                         <SvgIcon path={path.mdiDotsVertical} />
                     </span>
-                    <div className={`collapseOption ${this.show ? '' : 'hidden'}`} style={{ width: this.props.lstItems ? '258px' : 'auto', position: 'absolute' }}>
+                    <div className={`collapseOption ${this.show ? '' : 'hidden'}`} style={{ width: '258px', position: 'absolute', right: 0, padding: '5px', zIndex: 999, background: 'var(--primary-dark)', border: '1px solid var(--semantic-primary)' }}>
                         {
                             this.props.lstItems
                                 ? <div className='optionContainer'>
