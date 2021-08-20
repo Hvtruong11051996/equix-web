@@ -578,7 +578,8 @@ export default class CanvasGrid extends React.Component {
         this._dicData[this.fnKey(data)] = data;
       })
       this._listData = listData;
-      this.listDataClient(this._listData);
+      // this.listDataClient(this._listData);
+      console.log(' listData :>> ', listData);
     }
     if (this.props.getFilterOnSearch) {
       this._dataAfterAction = this._listData
@@ -1521,9 +1522,9 @@ export default class CanvasGrid extends React.Component {
     }
   }
 
-  listDataClient = (listDataRender) => {
+  componentDidMount = () => {
     this.grid = new Hypergrid(`#${this.id}`, {
-      data: listDataRender,
+      data: this._listData,
       schema: []
     });
     this.props.getRootGrid && this.props.getRootGrid(this.grid)
