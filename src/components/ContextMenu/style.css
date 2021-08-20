@@ -1,0 +1,104 @@
+.toolBarWrapper {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  
+  .toolBarWrapper > div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .dropdownCanvas {
+    box-shadow: 0 2px 5px 0 #000;
+    max-height: 160px !important;
+    overflow-y: auto;
+  }
+  
+  .dropdownCanvas.ag-theme-fresh.ag-popup {
+    height: unset
+  }
+  
+  
+  .context-menu-canvas {
+    height: 160px !important;
+  }
+  
+  .tab_menu_header .ag-menu-option.disable {
+    cursor: not-allowed;
+  }
+  
+  .menu_header .ag-column-panel {
+    max-height: 242px !important;
+  }
+  
+  .menu_header .ag-column-panel {
+    max-height: 242px !important;
+  }
+  
+  .canvasMenuHeader .ag-menu {
+    overflow: unset !important;
+  }
+  
+  .toolbar-canvas.ag-side-buttons-custom {
+    display: unset;
+  }
+  
+  .toolbar-canvas.ag-theme-fresh {
+    flex: unset;
+    height: unset;
+  }
+  
+  .ag-menu-option.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ag-menu-option-header {
+    font-size: 14px;
+  }
+  
+  .dropdownCanvas .dropdownCanvasElement {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.1px;
+    text-align: left;
+    line-height: 32px;
+    min-width: 0;
+    min-height: 0;
+  }
+  
+  .dropdownCanvas .isDisable.dropdownCanvasElement {
+    cursor: not-allowed;
+  }
+  
+  .canvasMenuHeader .ag-filter-body-wrapper input {
+    text-indent: 0px !important;
+  }
+  
+  .canvasMenuHeader input.datepicker-input-custom {
+    margin-right: 0 !important;
+  }
+  
+  .canvasMenuHeader .input-date-gr svg {
+    transform: translateY(4px);
+    width: 20px !important;
+  }
+  
+  .paginateCanvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+  }

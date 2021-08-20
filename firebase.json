@@ -1,0 +1,47 @@
+{
+    "hosting": {
+        "public": "dist",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "headers": [
+            {
+                "source": "**",
+                "headers": [
+                    {
+                        "key": "X-Frame-Options",
+                        "value": "sameorigin"
+                    }
+                ]
+            }
+        ],
+        "rewrites": [
+            {
+                "source": "/sign-in",
+                "destination": "/index.html"
+            },
+            {
+                "source": "/sign-up",
+                "destination": "/index.html"
+            },
+            {
+                "source": "/log-in",
+                "destination": "/index.html"
+            },
+            {
+                "source": "/login",
+                "destination": "/index.html"
+            },
+            {
+                "source": "/signin",
+                "destination": "/index.html"
+            },
+            {
+                "source": "/signup",
+                "destination": "/index.html"
+            }
+        ]
+    }
+}

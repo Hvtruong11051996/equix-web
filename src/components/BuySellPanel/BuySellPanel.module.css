@@ -1,0 +1,120 @@
+@import '../../core.module.css';
+
+.boxRight {
+  /* border: 1px solid var(--border); */
+  position: relative;
+}
+
+.searchBox {
+  position: absolute;
+  top: -24px;
+  left: 56px;
+}
+
+.searchBox :global(.button) {
+  display: none;
+}
+
+.searchBox :global(.inputAddon) {
+  border-radius: 2px;
+}
+
+.searchBox :global(.inputAddon) :global(input),
+.searchBox :global(.inputAddon) :global(.flagIcon) {
+  background: #171a28;
+}
+
+.orderButton {
+  height: 46px;
+  width: 248px;
+  display: flex;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.orderButton>* {
+  flex: 1;
+  background-color: var(--primary-light);
+  padding: 6px 8px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(197, 203, 206, 0.8);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.buyInfo {
+  text-align: right;
+}
+
+.sellInfo {
+  text-align: left;
+}
+
+.buyInfo>div+div,
+.sellInfo>div+div {
+  margin-top: 4px;
+}
+
+.textBuy {
+  color: var(--buy-light)
+}
+
+.textSell {
+  color: var(--sell-light);
+}
+
+.buy {
+  background: #182933;
+}
+
+.sell {
+  background: #2c202c;
+  border-left: 1px solid var(--border)
+}
+
+.caculate {
+  width: 24px;
+  border: 1px solid var(--border);
+  margin: -1px;
+  flex-direction: column;
+}
+
+.caculate span {
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  cursor: pointer;
+  color: #666b77;
+  user-select: none;
+}
+
+.caculate span+span {
+  border-top: 1px solid var(--border);
+}
+
+.inputNumberWrap {
+  position: relative;
+}
+
+.inputNumberWrap .labelInput {
+  min-width: 40px;
+  align-items: center;
+  padding: 0 8px;
+  color: transparent;
+  box-sizing: border-box;
+}
+
+.inputNumber {
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: var(--secondary-default);
+  box-sizing: border-box;
+  padding-left: 0px;
+  border-left: 1px solid var(--border);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

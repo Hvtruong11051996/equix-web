@@ -1,0 +1,27 @@
+:root {
+    --size-1: 7px;
+    --size-2: 11px;
+    --size-3: 12px;
+    --size-4: 14px;
+    --size-5: 17px;
+    --size-6: 20px;
+    --size-7: 24px;
+}
+:root .small {
+    --size-1: 6px;
+    --size-2: 10px;
+    --size-3: 11px;
+    --size-4: 13px;
+    --size-5: 16px;
+    --size-6: 19px;
+    --size-7: 22px;
+}
+:root .large{
+    --size-1: 8px;
+    --size-2: 12px;
+    --size-3: 13px;
+    --size-4: 15px;
+    --size-5: 18px;
+    --size-6: 21px;
+    --size-7: 28px;
+}

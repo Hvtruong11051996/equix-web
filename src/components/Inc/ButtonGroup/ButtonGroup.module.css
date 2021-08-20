@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textBtn {
+  font-size: var(--size-3);
+  text-transform: capitalize;
+  padding-left: 6px;
+}
+
+.importFile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 102;
+  box-sizing: border-box;
+  background: rgba(25, 25, 25, 0.78);
+}
+
+.more>div {
+  display: none;
+}
+
+:global(.w640) .more>div {
+  display: block
+}

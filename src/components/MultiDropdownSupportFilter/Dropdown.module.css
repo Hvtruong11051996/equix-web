@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-light);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    color: var(--secondary-default);
+    width: 162px;
+    height: 24px;
+}
+.defaultValue {
+    line-height: 22px;
+    flex: 1;
+    padding-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dropdownIcon {
+    fill: var(--secondary-default);
+    width: 24px;
+    height: 20px;
+}
+.searchOption {
+    border-bottom: 1px solid var(--primary-dark);
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 8px;
+}
+.searchIcon {
+    height: 20px;
+    width: 20px;
+    fill: var(--secondary-dark);
+}
+.inputSearch {
+    text-indent: 8px;
+    border: none;
+    width: 100%;
+    color: var(--color);
+    background: transparent;
+}
+.listOption {
+    background: var(--primary-light);
+}
+.lineDotted {
+    width: 100%;
+    border-bottom: 1px dashed var(--primary-dark);
+}
+.item {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 32px;
+}
+.disableItem {
+    cursor: not-allowed;
+}
+.disableItem > * {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.label {
+    padding-left: 8px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

@@ -1,0 +1,4 @@
+:root {
+    --text-color_primary_dark: var(--secondary-default);
+    --text-color_primary_light: #4a4a4a;
+}

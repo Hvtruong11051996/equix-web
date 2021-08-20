@@ -1,0 +1,25 @@
+.paginate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    background: var(--primary-dark);
+    /* position: absolute;
+    bottom: 0;
+    left: 8px;
+    right: 0; */
+    margin: 0;
+    border-top: 1px solid var(--semantic-primary);
+}
+
+.paginate>div {
+    display: flex;
+    align-items: center;
+}
+
+.paginate :global(.disabled) {
+    opacity: 0.54;
+    pointer-events: none;
+    align-items: center;
+    display: flex;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "golden-layout-react-redux",
+  "version": "1.0.0",
+  "description": "example showing how to use react-redux with golden-layout",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "redux",
+    "react-redux",
+    "golden-layout"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "4.16.2"
+  }
+}

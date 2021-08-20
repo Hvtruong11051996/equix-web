@@ -1,0 +1,22 @@
+--require babel-register
+--require ./test/setup
+--timeout 999999
+#test/sign_in/*.test.js
+#test/sign_in/26_sign_in.test.js
+#test/news/*.test.js
+#test/news/01_news.test.js
+#test/news/02_news.test.js
+#test/news/03_news.test.js
+#test/news/04_news.test.js
+#test/news/05_news.test.js
+#test/news/06_news.test.js
+#test/news/07_news.test.js
+#test/news/08_news.test.js
+#test/news/09_news.test.js
+#test/contract_note/contract_note_1.test.js
+#test/contract_note/contract_note_001.test.js
+#test/marketOverview/*.test.js
+#test/marketOverview/16_marketOverview.test.js
+test/checklist/after_login/000006_after_login.test.js
+--reporter mochawesome
+--reporter-options reportFilename=index,reportTitle=Equix,reportPageTitle=Equix

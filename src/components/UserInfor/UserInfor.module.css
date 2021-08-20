@@ -1,0 +1,111 @@
+@import '../../core.module.css';
+.textUppercase {
+  text-transform: uppercase;
+}
+
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.itemRow:nth-child(even) {
+  background: var(--primary-default);
+}
+
+.itemRow:hover {
+  background-color: #1C2733;
+}
+
+.rowTag {
+  height: auto;
+}
+
+.lablel {
+  white-space: nowrap;
+  font-weight: normal;
+  margin: 0;
+  font-family: Roboto;
+  display: inline-block;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.Info {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px !important;
+  margin: 0;
+  word-wrap: break-word;
+  float: right;
+  line-height: 32px;
+  min-height: 32px;
+}
+
+.parentTag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.tagColor {
+  padding: 2px 8px;
+  margin: 4px;
+  margin-top: 8px;
+  line-height: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btnEditEmail {
+  display: flex;
+}
+
+.btnEditEmail span {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mailAlert {
+  display: block !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.mailAlertIcon {
+  white-space: nowrap;
+}
+
+.mailAlertIcon span {
+  display: none
+}
+
+.mailAlertIcon {
+  cursor: pointer;
+}
+
+:global(.theme-light .userAccount) svg {
+  fill: #7d7d7d !important
+}
+
+:global(.theme-light .userAccount) svg:hover {
+  fill: rgb(53, 158, 228) !important
+}
+
+:global(.theme-light .userAccount) .lablel {
+  color: #888989
+}
+
+:global(.theme-light .userAccount) .Info {
+  color: #4a4a4a;
+}

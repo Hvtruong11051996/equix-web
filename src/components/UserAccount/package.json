@@ -1,0 +1,6 @@
+{
+    "name": "UserAccount",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./UserAccount.js"
+  }

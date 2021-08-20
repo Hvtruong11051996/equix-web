@@ -1,0 +1,4 @@
+export default {
+    INVALID_MAPPING: 'INVALID_MAPPING',
+    ACCOUNT_LOCKED: 'ACCOUNT_LOCKED'
+};

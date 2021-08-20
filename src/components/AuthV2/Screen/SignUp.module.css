@@ -1,0 +1,197 @@
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    max-height: 70vh;
+    width: 100%;
+    background: var(--primary-dark);
+}
+
+.title {
+    font-size: var(--size-5);
+    color: var(--secondary-default);
+    font-weight: bold;
+}
+
+.captchaContainer {
+    position: relative;
+    z-index: 9;
+    margin: 24px 0 10px 0;
+    transform: scale(1.215);
+}
+
+.submitting > div {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submitting > div > div {
+  pointer-events: none;
+}
+
+/* .captchaContainer > div {
+    width: 100% !important;
+} */
+
+.captchaContainer > div > div {
+    height: 100% !important;
+}
+
+/* .captchaContainer > div > div > iframe  {
+    width: 100% !important;
+}
+
+.rc-anchor-normal {
+    width: 100% !important;
+} */
+
+.buttonContainer {
+    display: flex;
+    padding: 16px 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 99;
+}
+
+.textBtn {
+    color: var(--secondary-default);
+    font-size: var(--size-4);
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.divide {
+    color: var(--secondary-default);
+    font-size: var(--size-3);
+}
+
+.footerContainer {
+    display: flex;
+    position: relative;
+    z-index: 99;
+}
+  
+  .form {
+    /* width: 100%; */
+    width: 368px;
+  }
+  
+  .formInput {
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+  
+  .formInput input {
+    font-size: var(--size-4);
+  }
+  
+  .field+.field {
+    margin-top: 8px;
+  }
+  
+  .inputGroup {
+    display: flex;
+  }
+  
+  .inputGroup> :first-child {
+    flex: 1;
+  }
+  
+  .inputGroup> :last-child {
+    margin-left: 4px;
+    padding: 0 12px;
+    min-width: 80px;
+  }
+  
+  .buttonGroup {
+    margin-top: 16px;
+    display: flex;
+  }
+  
+  .buttonGroup>* {
+    flex: 1;
+  }
+  
+  .buttonGroup>*+* {
+    margin-left: 8px;
+  }
+  
+  .cancel, .submit {
+    background: var(--semantic-primary);
+    color: var(--secondary-light);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+    font-size: var(--size-4);
+  }
+  
+  .cancel:hover {
+    background: var(--semantic-primary-hover);
+  }
+  
+  .submit {
+    cursor: pointer;
+    background: var(--ascend-default);
+    color: var(--secondary-light);
+    font-size: var(--size-3);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  
+  .submit.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+  
+  .submit:hover {
+    background: var(--ascend-dark);
+  }
+
+  .acceptContainer {
+    color: var(--secondary-default);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: var(--size-4);
+    padding-top: 16px;
+  }
+
+  .policyText {
+    color: var(--ascend-default);
+    text-decoration: underline;
+    padding-left: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .fakeScrollContainer {
+    width: 100vw;
+    display: flex;
+    flex: 1 1 0%;
+    margin-top: 24px;
+    overflow: auto;
+    position: relative;
+    justify-content: center;
+  }
+
+  .fakeScrollContainer :global(.__vertical) {
+    right: calc(50% - 184px);
+  }
+
+  .fakeScrollContainer :global(.__horizontal) {
+    display: none;
+  }

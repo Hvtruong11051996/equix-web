@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`addNewMargin 1`] = `[Function]`;
+
+exports[`editDes 1 1`] = `[Function]`;
+
+exports[`editMarginType 1 1`] = `[Function]`;
+
+exports[`render 1`] = `[Function]`;
+
+exports[`render 2`] = `[Function]`;
+
+exports[`renderHeader connected false and edit false 1`] = `[Function]`;
+
+exports[`renderHeader connected true and edit false 1`] = `[Function]`;
+
+exports[`renderHeader edit true and connected false 1`] = `[Function]`;
+
+exports[`renderHeader update = true 1`] = `[Function]`;
+
+exports[`renderHeader userInfo = true 1`] = `[Function]`;

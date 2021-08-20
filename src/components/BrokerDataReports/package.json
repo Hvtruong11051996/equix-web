@@ -1,0 +1,6 @@
+{
+    "name": "BrokerDataReports",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./BrokerDataReports.js"
+}

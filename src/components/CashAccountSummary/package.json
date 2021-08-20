@@ -1,0 +1,6 @@
+{
+  "name": "CashAccountSummary",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CashAccountSummary.js"
+}

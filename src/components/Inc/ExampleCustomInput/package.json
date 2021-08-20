@@ -1,0 +1,6 @@
+{
+    "name": "ExampleCustomInput",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./ExampleCustomInput.js"
+}

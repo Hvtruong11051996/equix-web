@@ -1,0 +1,85 @@
+.button {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--semantic-primary);
+    color: var(--secondary-default);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    height: 24px;
+    padding: 0 12px;
+    transition: .3s;
+    font-size: var(--size-4);
+}
+
+.button.small {
+    height: 20px;
+}
+
+.button.large {
+    height: 32px;
+}
+
+.button.mini {
+    padding: 0 6px;
+}
+
+.button svg {
+    fill: var(--secondary-default);
+    width: 16px;
+    height: 16px;
+}
+
+.button.info, .button.success, .button.danger, .button.ascend {
+    color: var(--secondary-light);
+}
+
+.button.info svg, .button.success svg, .button.danger svg {
+    fill: var(--secondary-light);
+}
+
+.button~.button {
+    margin-left: 8px;
+}
+
+.button:hover {
+    background: var(--semantic-primary-hover);
+}
+
+.button.info {
+    background: var(--semantic-info);
+}
+
+.button.info:hover {
+    background: var(--semantic-info-hover);
+}
+
+.button.success {
+    background: var(--semantic-success);
+}
+
+.button.success:hover {
+    background: var(--semantic-success-hover);
+}
+
+.button.danger {
+    background: var(--semantic-danger);
+}
+
+.button.danger:hover {
+    background: var(--semantic-danger-hover);
+}
+
+.button.ascend {
+    background: var(--ascend-default);
+}
+
+.button.ascend:hover {
+    background: var(--ascend-dark);
+}
+
+.button.disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}

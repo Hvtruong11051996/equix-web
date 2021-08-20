@@ -1,0 +1,6 @@
+{
+  "name": "Selection",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Selection.js"
+}

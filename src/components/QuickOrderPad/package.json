@@ -1,0 +1,6 @@
+{
+  "name": "QuickOrderPad",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./QuickOrderPad.js"
+}

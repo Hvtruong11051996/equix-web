@@ -1,0 +1,95 @@
+.input {
+    position: relative;
+    background: var(--primary-light);
+    border: 1px solid var(--border);
+    height: 24px;
+    box-sizing: border-box;
+    line-height: 24px;
+    display: flex;
+}
+
+.input input {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--secondary-default);
+    font-size: var(--size-3);
+    padding: 0 8px;
+}
+
+.input input:disabled {
+    cursor: not-allowed;
+}
+
+.border1:before, .border1:after, .border2:before, .border2:after {
+    content: '';
+    position: absolute;
+    background: var(--ascend-default);
+}
+
+.border1:before, .border2:before {
+    top: 0;
+    left: 0;
+}
+
+.border1:after, .border2:after {
+    bottom: 0;
+    right: 0;
+}
+
+.border1:before, .border1:after {
+    transition: .3s;
+    width: 0;
+    height: 1px;
+}
+
+.border2:before, .border2:after {
+    transition: .4s;
+    width: 1px;
+    height: 0;
+}
+
+input:focus~.border1:before, input:focus~.border1:after {
+    width: 100%;
+}
+
+input:focus~.border2:before, input:focus~.border2:after {
+    height: 100%;
+}
+
+.placeholder {
+    position: absolute;
+    height: 100%;
+    left: 8px;
+    pointer-events: none;
+    color: var(--secondary-dark);
+    text-transform: capitalize;
+}
+
+input::placeholder {
+    color: var(--secondary-dark);
+    text-transform: capitalize;
+}
+
+.placeholder, .floatIcon:empty, input:invalid~.floatIcon {
+    display: none;
+}
+
+input:invalid~.placeholder {
+    display: block;
+}
+
+.floatIcon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.floatIcon svg {
+    width: 16px;
+    height: 16px;
+}

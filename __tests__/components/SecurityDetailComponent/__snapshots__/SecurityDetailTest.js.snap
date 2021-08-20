@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderSpecificFields selfChanged 1`] = `
+<div
+  className="sd_group-left"
+>
+  <div
+    className="sd_group-row"
+  >
+    <div
+      className="sd_group-row-label showTitle"
+    >
+      <Unknown>
+        Code
+      </Unknown>
+    </div>
+    <div
+      className="sd_code showTitle"
+    >
+      <div>
+        KCEH20.ICE_US
+      </div>
+      <Flag
+        countryCode="US"
+      />
+    </div>
+  </div>
+  <div
+    className="sd_group-row"
+  >
+    <div
+      className="sd_group-row-label showTitle"
+    >
+      <Unknown>
+        promptDate
+      </Unknown>
+    </div>
+    --
+  </div>
+  <div
+    className="sd_group-row"
+  >
+    <div
+      className="sd_group-row-label showTitle"
+    >
+      <Unknown>
+        Exchange
+      </Unknown>
+    </div>
+    <div
+      className="sd_default-val showTitle"
+    >
+      ICE_US
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renderSpecificFields selfChanged 2`] = `
+<div
+  className="sd_group-left"
+>
+  <div
+    className="sd_group-row"
+  >
+    <div
+      className="sd_group-row-label showTitle"
+    >
+      <Unknown>
+        Code
+      </Unknown>
+    </div>
+    <div
+      className="sd_code showTitle"
+    >
+      <div>
+        KCEH20.ICE_US
+      </div>
+      <Flag
+        countryCode="US"
+      />
+    </div>
+  </div>
+  <div
+    className="sd_group-row"
+  >
+    <div
+      className="sd_group-row-label showTitle"
+    >
+      <Unknown>
+        expiryDate
+      </Unknown>
+    </div>
+    <div
+      className="sd_default-val showTitle"
+    >
+      Mar2020
+    </div>
+  </div>
+  <div
+    className="sd_group-row"
+  >
+    <div
+      className="sd_group-row-label showTitle"
+    >
+      <Unknown>
+        Exchange
+      </Unknown>
+    </div>
+    <div
+      className="sd_default-val showTitle"
+    >
+      ICE_US
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renderValueField 1`] = `
+<div
+  className="sd_default-val showTitle"
+>
+  2
+</div>
+`;
+
+exports[`renderValueField 2`] = `
+<div
+  className="sd_default-val showTitle"
+>
+  2
+</div>
+`;
+
+exports[`renderValueField value expiryDate 1`] = `
+<div
+  className="sd_default-val showTitle"
+/>
+`;
+
+exports[`renderValueField value null 1`] = `"--"`;
+
+exports[`renderValueField value null 2`] = `"--"`;
+
+exports[`renderValueField value null 3`] = `"--"`;
+
+exports[`renderValueField value null 4`] = `"--"`;
+
+exports[`renderValueField value null 5`] = `"--"`;
+
+exports[`renderValueField value null 6`] = `"--"`;
+
+exports[`renderValueField value null 7`] = `"--"`;
+
+exports[`renderValueField value null 8`] = `"--"`;

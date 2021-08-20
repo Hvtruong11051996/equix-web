@@ -1,0 +1,208 @@
+.boxContainer {
+  box-sizing: border-box;
+  display: flex;
+  width: 180px;
+  min-width: 180px;
+  height: 70px;
+  justify-content: space-between;
+  padding: 4px 8px;
+  background: var(--primary-light);
+  border: thin solid var(--border);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.boxContainer+.boxContainer {
+  margin-left: 8px;
+}
+
+.boxContainer.hidden {
+  display: none;
+}
+
+.boxContainer.active {
+  border: 2px solid var(--ascend-default);
+  opacity: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rowBetween {
+  justify-content: space-between;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.colorUp {
+  background-color: var(--buy-light);
+}
+
+.colorDown {
+  background-color: var(--sell-light);
+}
+
+.chart {
+  width: 100%;
+}
+
+.bar {
+  height: 3px;
+  background-color: var(--secondary-dark);
+  margin-bottom: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fill {
+  position: absolute;
+  height: 100%;
+}
+
+.arrowRight {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-left: 3px solid white;
+}
+
+.arrowLeft {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-right: 3px solid white;
+}
+
+.rangeText {
+  font-size: 10px;
+  color: var(--secondary-default);
+  letter-spacing: -0.11px;
+}
+
+.nameText {
+  font-size: var(--size-2);
+  color: var(--secondary-default);
+  letter-spacing: -0.08px;
+}
+
+.mainPriceText {
+  font-size: var(--size-4);
+  letter-spacing: -0.08px;
+}
+
+.subPriceText {
+  font-size: 10px;
+  letter-spacing: -0.08px;
+}
+
+.prev,
+.next {
+  display: block;
+  cursor: pointer;
+}
+
+.tinyWidth .list {
+  width: 100%;
+  justify-content: center;
+}
+
+.smallWidth .list {
+  padding: 0 calc((100% - 400px) / 3);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mediumWidth .list {
+  padding: 0 calc((100% - 580px) / 4);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.largeWidth .list {
+  padding: 0;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.smallWidth .quickFilterLeft,
+.tinyWidth .quickFilterLeft {
+  display: none;
+}
+
+.smallWidth .quickFilterBottom,
+.tinyWidth .quickFilterBottom {
+  display: flex;
+}
+
+.largeWidth .quickFilterLeft,
+.mediumWidth .quickFilterLeft {
+  display: flex;
+}
+
+.largeWidth .quickFilterBottom,
+.mediumWidth .quickFilterBottom {
+  display: none;
+}
+
+.smallWidth :global(.moreOption),
+.tinyWidth :global(.moreOption) {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  height: auto;
+}
+
+.mediumWidth :global(.moreOption),
+.largeWidth :global(.moreOption) {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  height: 24px;
+}
+
+.largeWidth .prev,
+.largeWidth .next {
+  display: none;
+}
+
+.quickFilterLeft {
+  max-width: 320px;
+  width: calc(100% - 370px);
+  position: absolute;
+  right: 20px;
+
+}
+
+.quickFilterBottom {
+  min-width: unset;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.disable {
+  cursor: not-allowed;
+}
+
+.disable svg {
+  fill: rgba(197, 203, 206, 0.5) !important;
+  pointer-events: none;
+}

@@ -1,0 +1,129 @@
+p {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.container .noData {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.lineSolid {
+  width: 100%;
+  background: var(--semantic-primary);
+  background-size: 8px 1px;
+  height: 1px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.symbolSearchBox {
+  width: 100%;
+}
+
+.statusBtn {
+  background: var(--buy-light);
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+  max-width: 94px;
+  margin-right: 8px;
+  color: white;
+  flex: 1;
+}
+
+.grButton {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-white);
+  flex: 1;
+  margin: 0 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.button.cancelBuy {
+  background: var(--buy-light);
+}
+
+.button.cancelAll {
+  background: var(--primary-light);
+}
+
+.button.cancelSellRed {
+  background: var(--sell-light);
+}
+
+.button:global(.disabled), :global(.ag-side-button .disabled) {
+  color: var(--secondary-default);
+  cursor: not-allowed;
+}
+
+.button:global(.disabled) {
+  background: var(--secondary-dark);
+}
+
+.futureInfo, .futurePrice {
+  color: var(--secondary-dark);
+  padding: 6px 0;
+}
+
+.futureInfo span, .futurePrice span {
+  color: var(--secondary-default);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxRight {
+  text-align: right;
+}
+
+.boxRight p:first-child, .boxLeft p:first-child {
+  margin-bottom: 4px;
+}
+
+.price {
+  text-indent: 0;
+}
+
+.percent {
+  text-indent: 0;
+}
+
+.changePoint {
+  text-indent: 0;
+}
+
+.slash {
+  margin: 0 4px;
+}
+
+.searching .symbolSearchBox {
+  display: flex;
+  flex: 1;
+}
+
+.symbolSearchBox :global(.nodeSearchBox), .symbolSearchBox :global(.inputAddon) {
+  width: 100%;
+}

@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-dark);
+    width: 60vw;
+    height: 80vh;
+    min-width: 800px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+.header {
+    height: 32px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-light);
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .title {
+    color: var(--secondary-default);
+    font-size: var(--size-3);
+  }
+  .userDetail {
+    position: relative;
+    padding: 8px 24px 0 24px;
+    line-height: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: var(--size-5);
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .footerBtn {
+    text-transform: uppercase;
+    margin: 8px 4px;
+    height: 32px;
+  }
+  .refActBtn.disableBtn, .refActBtn .disableBtn, .footerBtn.disableBtn {
+    cursor: not-allowed;
+  }
+  .refActBtn.disableBtn .footerBtn, .refActBtn .footerBtn, .btn .footerBtn.disableBtn {
+    opacity: .54;
+    pointer-events: none;
+  }

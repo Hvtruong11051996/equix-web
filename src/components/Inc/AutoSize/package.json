@@ -1,0 +1,6 @@
+{
+  "name": "AutoSize",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AutoSize.js"
+}

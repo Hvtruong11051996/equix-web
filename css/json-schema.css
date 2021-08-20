@@ -1,0 +1,865 @@
+.form-group {
+    line-height: 32px;
+    margin-bottom: 0;
+    padding: 0 !important;
+}
+
+.userDetailContainer form.rjsf {
+  flex-direction: column;
+  padding-right: 8px;
+}
+.CreateUserContainer form.rjsf {
+  padding-right: unset;
+}
+
+.form-group.field fieldset {
+  border: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset legend {
+  padding: 0;
+}
+
+.form-group.field.field-string {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+  .form-group.field.field-object.subTitle .customFieldContainer input,
+  .form-group.field.field-string input {
+    display: block;
+    flex: 1;
+    text-align: right;
+    border-radius: 0;
+    height: 22px;
+    min-height: 22px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 8px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    text-overflow: ellipsis;
+  }
+
+  .form-group.field.field-object.subTitle .customFieldContainer input::placeholder,
+  .form-group.field.field-string input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+  }
+
+  .form-group.field.field-array .customFieldContainer .searchSuggest{
+    position: unset !important;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .form-group.field.field-array .customFieldContainer .inputAddon input {
+    text-align: right;
+    padding-right: 8px;
+  }
+
+  .form-group.field.field-array .customFieldContainer .inputAddon .placeHolder {
+    text-align: right;
+    padding-right: 8px;
+}
+
+  .form-group.field.field-array .customFieldContainer .inputAddon {
+    width: 100%;
+    justify-content: flex-end;
+    top: 4px;
+  }
+
+  .form-group.field.field-string .customFieldContainer .inputAddon {
+    border: none !important;
+  }
+
+  .form-group.field.field-string .customFieldContainer .inputAddon .placeHolder {
+    display: flex;
+  }
+
+  .removeButton {
+    width: 100%;
+  }
+
+  .form-group.field.field-object.subTitle .customFieldContainer input:read-only,
+  .form-group.field.field-string input:read-only {
+    border: none;
+  }
+
+  .searchAccountContainer, .listSearchAccountContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .listSearchAccountContainer {
+    flex-direction: column;
+  }
+
+  .error-detail {
+    display: none;
+  }
+  
+  .form-group.field.field-array.subTitle .customFieldContainer:first-child {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .form-group.field.field-array.subTitle .customFieldContainer .customFieldContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-group.field.field-object.subTitle .customFieldContainer .formDropdownContainer {
+    width: 92px;
+    min-width: 92px;
+    max-width: 92px;
+    padding-left: 8px;
+    text-align: right;
+  }
+
+  .formDropdownContainerFlex {
+      flex: 1;
+      min-width: 0;
+  }
+  
+  .form-group.field.field-string label,
+  .form-group.field.field-object label {
+    width: 50%;
+    font-weight: 500;
+    border-bottom: none !important;
+    padding-left: 8px;
+  }
+  
+  .form-group.field.field-string.subTitle {
+    padding: 0;
+    padding-left: 20px;
+  }
+  
+  .form-group.field.field-object.subTitle {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .customFieldContainer {
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-group.field.field-string.subTitle label,
+  .form-group.field.field-object.subTitle .customFieldContainer label,
+  .form-group.field.field-array.subTitle .listSearchAccountContainer label {
+    width: 50%;
+    font-weight: 100;
+    padding-left: 8px;
+  }
+  
+  .field.field-array.field-array-of-object .col-xs-3.array-item-toolbox,
+  .field.field-array.field-array-of-object button {
+    display: none;
+  }
+  
+  .field.field-array.field-array-of-object .row.array-item-list .array-item > div:first-child {
+    width: 100% !important;
+  }
+
+  .btn.disableBtn {
+    pointer-events: none;
+  }
+
+  .userDetailContainer .actionContainer span {
+    display: none;
+  }
+
+  .w800 .userDetailContainer .actionContainer span {
+    display: unset !important;
+  }
+
+  /*-------- Create user ky2h -----------*/
+  .wrapCreateUserContainer .CreateUserContainer fieldset {
+    width: 100%
+  }
+
+  .wrapCreateUserContainer .qe-row,
+  .wrapCreateUserContainer .qe-accountList .qe-row {
+    display: flex;
+    flex-direction: row;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: flex-start;
+  }
+  .wrapCreateUserContainer .qe-accountList .qe-row {
+    align-items: center;
+  }
+  .wrapCreateUserContainer .qe-row .searchAccountContainer.accountSum{
+    width: unset;
+  }
+  .wrapCreateUserContainer .qe-row .searchAccountContainer.accountSum {
+    min-width: 49%;
+    flex:2;
+  }
+  .wrapCreateUserContainer .qe-row .inputAddon{
+    width: 100%;
+  }
+
+  .wrapCreateUserContainer .qe-row .dropDown {
+    flex: 2;
+    width: 100%;
+    min-width: 49%;
+  }
+  .wrapCreateUserContainer .qe-label {
+    flex: 1;
+    line-height: 24px;
+  }
+  .qe-value-listAccount.qe-removeButton.showTitle,
+  .listSearchAccountContainer .qe-value.qe-removeButton,
+  .wrapCreateUserContainer .qe-value.qe-removeButton {
+    display: unset;
+    border-radius: 2px;
+    height: 28px;
+    text-align: center;
+    align-items: center;
+    line-height: 28px;
+    width: 70px;
+    margin-left: 8px;
+    margin-top: 9px;
+    flex: unset;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.listSearchAccountContainer.readonlyInput .qe-value.qe-removeButton {
+  display: none;
+}
+
+.wrapCreateUserContainer .qe-value.qe-removeButton {
+  margin-top: 0;
+}
+
+.customFieldContainer .qe-value.qe-removeButton {
+  margin: 0;
+}
+
+  .wrapCreateUserContainer #root_otherAccessMethod {
+    visibility: hidden;
+  }
+  .wrapCreateUserContainer .qe-value {
+    flex: 1;
+    text-align: right;
+  }
+  .wrapCreateUserContainer .qe-input {
+    flex: 2;
+    display: flex;
+  }
+  .wrapCreateUserContainer .qe-input input {
+    width: 100%;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    margin: 0;
+    padding-left: 8px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    border: none;
+    padding-top: 0;
+    border-radius: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    height: 21px;
+  }
+
+  .wrapCreateUserContainer .titleRow {
+    height: 35px;
+  }
+  .wrapCreateUserContainer .btnGround {
+    height: 116px;
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+  }
+
+  .listSearchAccountContainer.readonlyInput .qe-value.qe-removeButton {
+    pointer-events: none;
+  }
+
+  .wrapCreateUserContainer .btnGround .btnClear {
+    padding-left: 8px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    font-weight: 300;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .wrapCreateUserContainer .btnGround .conFirm {
+    border-radius: 2px;
+    height: 62px;
+    text-align: center;
+    align-items: center;
+    line-height: 62px;
+    width: 100%;
+    margin-top: 7px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .qe-titleCreateUser {
+    position: absolute;
+    left: 8px;
+    line-height: 40px;
+  }
+  .wrapCreateUserContainer .CreateUserContainer .rjsf > p{
+    visibility: hidden;
+  }
+  .wrapCreateUserContainer .CreateUserContainer .qe-label{
+    padding-left: 8px;
+    padding-left: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 75px;
+  }
+  .wrapCreateUserContainer .CreateUserContainer > form > p {
+    visibility: hidden;
+  }
+  .CreateUserContainer .form-group.field.field-array {
+      height: unset;
+  }
+  .wrapCreateUserContainer {
+      height: 100% !important;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .btn.btn-info.btn-add.col-xs-12 {
+    width: 70px;
+    height: 30px;
+  }
+  .wrapCreateUserContainer .CreateUserContainer .form-group.field.field-string,
+  .wrapCreateUserContainer .CreateUserContainer .form-group.field.field-array {
+    padding-left: 8px;
+  }
+  .qe-wrap-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .qe-wrap-row > .qe-accountList,
+  .qe-wrap-row > .qe-row {
+      width: 100%;
+      box-sizing: border-box;
+  }
+  .w640 .qe-wrap-row > .qe-accountList,
+  .w640 .qe-wrap-row > .qe-row {
+      width: 50%;
+  }
+
+  .w960 .qe-wrap-row > .qe-accountList,
+  .w960 .qe-wrap-row > .qe-row {
+      width: calc(100% / 3);
+  }
+
+  .w960 .qe-fake-div {
+    height: 44px;
+    width: calc(100%/3);
+  }
+  .qe-row.qe-can-error.qe-col-3-3.user_group {
+    flex-direction: column
+  }
+  .qe-row.qe-can-error.qe-col-3-3.user_group .dropDown {
+    text-transform: uppercase;
+  }
+  .qe-validate-error {
+    display: flex;
+    height: 24px;
+    line-height: 24px;
+    justify-content: flex-end;
+    margin-right: 8px;
+  }
+
+  .qe-fieldError {
+      padding-right: 5px;
+      margin-top: 2px;
+  }
+  /* even odd extend*/
+  .w640 .qe-extend-row {
+    margin-left: calc(-100% - 8px);
+    padding-left: calc(100% + 8px);
+  }
+  .w640 .qe-extend-row .qe-label {
+      padding-left:8px;
+  }
+  .w640 .qe-value.qe-removeButton.showTitle {
+    margin-right: 8px
+  }
+  .w960 .qe-extend-row {
+    margin-left: unset;
+    padding-left: unset;
+  }
+  .w960 .qe-extend-row .qe-label {
+    padding-left:100%;
+  }
+  .w960 .qe-extend-row {
+    margin-right: -100%;
+    margin-left: -100%;
+  }
+  .w960 .qe-value.qe-removeButton.showTitle {
+    margin-right: unset
+  }
+  .w960 .qe-extend-row .qe-label {
+    margin-left: calc(100%/3 + 16px);
+  }
+
+  .CreateUserContainer .qe-row.qe-access-method .list > div { 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding-right: 22px;
+  }
+  .CreateUserContainer .qe-row.qe-access-method .list div > svg {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+  }
+  .CreateUserContainer .qe-row .searchAccountContainer.accountSum.qe-disabled-createUser {
+    visibility: hidden;
+  }
+  .CreateUserContainer .qe-row.qe-access-method .list div:nth-child(2) > svg {
+    right: 8px;
+    top: 36px;
+  }
+  .CreateUserContainer .qe-row.qe-access-method .list div:nth-child(3) > svg {
+    right: 8px;
+    top: 68px;
+  }
+
+  .qe-extend-row .qe-label {
+    font-weight: 100;
+  }
+  .qe-rowData {
+    min-width:100%;
+    display: flex;
+    align-items: center;
+  }
+  .qe-rowError {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+    margin-top: 5px;
+  }
+  .qe-row.qe-can-error {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: unset;
+  }
+  .errorCreateUser {
+    height: 24px;
+    min-height: 0;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 0 16px;
+    transition: visibility 0.5s, height 1s;
+  }
+  .errorCreateUser.size--3.myHidden {
+    visibility: hidden;
+    height: 0;
+  }
+  .CreateUserContainer .qe-SchemaForm .qe-accountList .searchAccountContainer.accountSum .button {
+    padding-left: 6px;
+  }
+  .wrapCreateUserContainer .yellow {
+    height: 24px;
+    min-height: 0;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 0 16px;
+    transition: visibility 0.5s, height 1s;
+  }
+  .wrapCreateUserContainer .myHidden.yellow {
+    height: 0;
+  }
+  .qe-suggest-account-create-user {
+    margin-right: 8px;
+  }
+  .wrapCreateUserContainer .CreateUserContainer .qe-input > input {
+    text-align: right;
+    padding-right: 8px;
+  }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .qe-row .dropDown >div:first-child > div {
+    padding-right: 8px;
+  }
+
+  .w640 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row > div:nth-child(even) > .qe-row .qe-label {
+    padding-left: 16px;
+  }
+  .w640 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row > div:nth-child(even).qe-row {
+    padding-left: 8px
+  }
+  .w640 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row > div:nth-child(odd) {
+      padding-right: 16px;
+  }
+
+
+  .w960 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row > div:nth-child(even) > .qe-row .qe-label {
+    padding-left: unset;
+  }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row > div:nth-child(even).qe-row {
+    padding-left: unset;
+  }
+
+  .w960 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row .Account.ID >div:first-child > .qe-label{
+    padding-left:8px;
+    
+  }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row > div:nth-child(even) {
+      padding-left: unset ;
+      
+  }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .qe-wrap-row > div:nth-child(odd) {
+      padding-right: unset;
+  }
+   /* 3 column */
+   .w960 .wrapCreateUserContainer .CreateUserContainer .email,
+   .w960 .wrapCreateUserContainer .CreateUserContainer .phone .qe-input {
+     padding-right: 8px;
+   }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .status,
+  .w960 .wrapCreateUserContainer .CreateUserContainer .full_name {
+      padding-right:16px !important;
+  }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .Account.ID .qe-row,
+  .w960 .wrapCreateUserContainer .CreateUserContainer .user_group,
+  .w960 .wrapCreateUserContainer .CreateUserContainer .user_login_id {
+      padding-left:8px !important;
+  }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .phone,
+  .w960 .wrapCreateUserContainer .CreateUserContainer .user_group {
+      padding-right: 8px !important;
+  }
+  .w960 .wrapCreateUserContainer .CreateUserContainer .qe-accountList .searchAccountContainer.accountSum  {
+    padding-right: 10px;
+  }
+  .w960 .user_group .dropDown,
+  .w960 .user_login_id .qe-input,
+  .w960 .user_type .dropDown {
+      margin-right: 8px;
+  }
+  .w960 .user_group .qe-rowError,
+  .w960 .user_login_id .qe-rowError{
+      padding-right: 8px
+  }
+  .w960 .user_type {
+    padding-right: 0
+  }
+  .w960 .user_type .qe-label {
+      margin-left: 8px;
+  }
+  .w960 .email {
+    padding-left: 8px;
+  }
+  .w960 .email .qe-input {
+      margin-right:8px
+  }
+  .user_group .list {
+    text-transform: uppercase;
+  }
+  .qe-row.qe-col-1-3.status {
+    height: 44px;
+  }
+  
+  /* only hove block T____T */
+  .qe-value-listAccount.qe-removeButton.showTitle {
+    position:absolute;
+    right: 8px;
+  }
+  .qe-listAccountMapping {
+    display:flex;
+    padding-left: 8px;
+    line-height: 44px;
+    height: 44px;
+  }
+
+  .w640 .qe-listAccountMapping {
+    padding-left: 16px;
+  }
+
+  .w960 .qe-value-listAccount.qe-removeButton.showTitle {
+      margin-right: unset
+  }
+
+  .w960 .qe-listAccountMapping {
+    width: calc(100% / 3 - 8px);
+    margin-left: calc(100% / 3);
+  }
+  .w960 .qe-value-listAccount.qe-removeButton.showTitle {
+    position:absolute;
+    right: calc(100%/3 + 16px)
+  }
+  /*-------- end of Create user ky2h -----------*/
+  .fullWidth {
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .readonlyInput .inputAddon,
+  .readonlyInput .inputAddon input,
+  .readonlyInput .dropDown {
+    border: none;
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  form.rjsf > .form-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form.rjsf > .form-group:first-child > div {
+    width: 100%;
+    position: relative;
+}
+
+.w960 form.rjsf > .form-group:first-child > div:nth-last-child(3) {
+    height: 32px;
+}
+
+.w960 form.rjsf > .form-group:first-child > div {
+  width: 50%;
+}
+
+form.rjsf > .form-group:first-child > div:last-child,
+form.rjsf > .form-group:first-child > div:nth-last-child(2) {
+  display: none;
+}
+
+.w1500 form.rjsf > .form-group:first-child > div {
+  width: calc(100% / 3);
+}
+
+.rowError {
+  text-align: right;
+  height: 22px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 12px;
+}
+
+.listSearchAccountContainer > div {
+  justify-content: space-between !important;
+}
+
+.qe-disabled-createUser {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.qe-disabled-bigButton,
+.qe-listAcc-row-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.accountContainer .searchAccountContainer {
+  height: 32px;
+}
+
+.accountContainer .searchAccountContainer > div {
+  z-index: 9;
+}
+
+/* FONT_SIZE T.T */
+.large .userDetailContainer .form-group.field.field-object.subTitle .customFieldContainer input,
+.large .userDetailContainer .form-group.field.field-string input {
+  font-size: 15px;
+}
+.large .userDetailContainer .form-group.field.field-string label,
+.large .userDetailContainer .form-group.field.field-object label,
+.large .userDetailContainer .form-group.field.field-string.subTitle label,
+.large .userDetailContainer .form-group.field.field-object.subTitle .customFieldContainer label,
+.large .userDetailContainer .form-group.field.field-array.subTitle .listSearchAccountContainer label {
+  font-size: 15px !important;
+}
+.large .qe-titleCreateUser,
+.large .wrapCreateUserContainer .titleRow {
+  font-size: 18px;
+}
+
+.small .userDetailContainer .form-group.field.field-object.subTitle .customFieldContainer input,
+.small .userDetailContainer .form-group.field.field-string input {
+  font-size: 13px;
+}
+.small .userDetailContainer .form-group.field.field-string label,
+.small .userDetailContainer .form-group.field.field-object label,
+.small .userDetailContainer .form-group.field.field-string.subTitle label,
+.small .userDetailContainer .form-group.field.field-object.subTitle .customFieldContainer label,
+.small .userDetailContainer .form-group.field.field-array.subTitle .listSearchAccountContainer label {
+  font-size: 13px !important;
+}
+.small .qe-titleCreateUser,
+.small .wrapCreateUserContainer .titleRow {
+  font-size: 16px;
+}
+
+.medium .userDetailContainer .form-group.field.field-object.subTitle .customFieldContainer input,
+.medium .userDetailContainer .form-group.field.field-string input {
+  font-size: 14px;
+}
+.medium .userDetailContainer .form-group.field.field-string label,
+.medium .userDetailContainer .form-group.field.field-object label,
+.medium .userDetailContainer .form-group.field.field-string.subTitle label,
+.medium .userDetailContainer .form-group.field.field-object.subTitle .customFieldContainer label,
+.medium .userDetailContainer .form-group.field.field-array.subTitle .listSearchAccountContainer label {
+  font-size: 14px !important;
+}
+.medium .qe-titleCreateUser,
+.medium .wrapCreateUserContainer .titleRow {
+  font-size: 17px;
+}
+
+form.rjsf .dropDown> :first-child> :first-child {
+  text-align: right;
+}
+/* END OF FONT_SIZE T.T */
+
+/* .changePasswordContainer form.rjsf {
+  padding: 16px 16px 0 16px;
+} */
+
+.changePasswordContainer .form-group.field.field-string input+svg {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  width: 20;
+  height: 20;
+  opacity: 0.7;
+}
+
+.changepasswordTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+
+.changepasswordText {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  text-align: center;
+}
+
+.changePasswordContainer{
+  width: 100%;
+}
+
+.changePasswordContainer form.rjsf > .form-group:first-child > div {
+  margin-bottom: 16px;
+}
+
+.changePasswordContainer .form-group.field.field-string > div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.changePasswordContainer form.rjsf > .form-group:first-child > div:last-child,
+.changePasswordContainer form.rjsf > .form-group:first-child > div:nth-last-child(2),
+.changePasswordContainer .form-group.field.field-string > div:last-child,
+.changePasswordContainer .form-group.field.field-string > div:nth-last-child(2) {
+  display: none;
+}
+
+.changePasswordContainer .form-group.field.field-string input {
+  flex: 1;
+  width: 100%;
+  text-align: left;
+  height: 40px;
+  border: unset;
+  border-radius: 2px;
+  padding-left: 15px;
+  padding-right: 35px;
+  font-size: 15px;
+  max-width: 100%;
+  text-overflow: unset;
+}
+
+.changePasswordContainer .form-group.field.field-string input::placeholder {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 15px;
+}
+
+.changePasswordContainer .fakePlacehold{
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  text-indent: 15px;
+  pointer-events: none;
+}
+.changePasswordContainer input:invalid ~ div.fakePlacehold{display: block;}
+.changePasswordContainer input ~ div.fakePlacehold{display: none;}
+
+.changePasswordConfirm {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px 16px 16px;
+}
+
+.changePasswordConfirm > div {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  cursor: pointer;
+}
+
+.changePasswordConfirm > div.disableBtn {
+  /* pointer-events: none; */
+  cursor: not-allowed
+}
+
+.changePasswordConfirm > div.enableBtn svg {
+  pointer-events: none;
+}
+
+.changePasswordConfirm > div svg {
+  margin-right: 8px;
+}
+
+.changepasswordError {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+

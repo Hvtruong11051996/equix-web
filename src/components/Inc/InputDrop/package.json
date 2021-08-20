@@ -1,0 +1,6 @@
+{
+    "name": "InputDrop",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./InputDrop.js"
+}

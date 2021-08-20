@@ -1,0 +1,92 @@
+.banner {
+  height: 105px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--primary-light);
+}
+
+.title {
+  margin: 8px 0;
+  height: 21px;
+  color: var(--secondary-default);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  text-align: center;
+}
+
+.fullStep {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+/* .eachStep {
+  display: flex;
+  flex-direction: row;
+} */
+
+.fullStep>* {
+  width: 40px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullStep>*>div {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--color-highlight);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+
+/* .icon {
+  height: 18px;
+  width: 18px;
+  padding: 1px;
+} */
+
+.line {
+  width: 15vw;
+  height: 2px;
+  margin: 19px 0 23px;
+  background-color: var(--color-highlight);
+}
+
+/* .bgIcon + .line, */
+
+.bgIcon>div, .bgLine {
+  background-color: var(--ascend-default);
+  cursor: pointer;
+}
+
+.bgLine+.bgIcon>div {
+  border: 2px solid var(--ascend-default);
+  box-sizing: border-box;
+}
+
+.bgIcon path {
+  fill: white;
+}

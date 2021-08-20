@@ -1,0 +1,54 @@
+.left {}
+
+.list {
+  display: flex;
+  transition: .3s;
+  position: relative;
+}
+
+.list>div {
+  padding: 0 4px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.middle {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.middledefault {
+  justify-content: center;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: solid 1px #141822;
+  background-color: var(--primary-default);
+  box-sizing: border-box;
+}
+
+.right {}
+
+.left,
+.right,
+.middle {
+  border: solid 1px #141822;
+  background-color: var(--primary-default);
+  box-sizing: border-box;
+}
+
+.selection {
+  display: flex;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: .4;
+  pointer-events: none;
+}

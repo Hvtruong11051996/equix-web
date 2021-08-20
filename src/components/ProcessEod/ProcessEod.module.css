@@ -1,0 +1,99 @@
+.EodWidget {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.EodWidget :global(.paginate) {
+  margin-bottom: -16px;
+}
+
+.Topinfo {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.selectTime {
+  position: absolute;
+  z-index: 1000;
+  padding-top: 5px;
+}
+
+.gridTitle {
+  width: 117px;
+  height: 19px;
+  object-fit: contain;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  color: var(--secondary-default);
+  padding-bottom: 10px;
+  cursor: default;
+}
+
+.dateAction {
+  display: flex;
+  justify-content: space-between
+}
+
+.btnProcess {
+  object-fit: contain;
+  opacity: 0.8;
+  background-color: var(--hover-default);
+  color: #fff;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.infoDate {
+  line-height: 32px;
+  cursor: default;
+}
+
+.rightReportHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 150px;
+  line-height: 28px;
+  z-index: 4;
+}
+
+.disableBtn {
+  overflow: auto;
+  cursor: not-allowed;
+}
+
+.disableBtn>div {
+  pointer-events: none;
+  background-color: #767a82 !important
+}
+
+.requestCell {
+  padding: 1px 10px;
+}
+
+.sent {
+  background-color: rgba(197, 203, 206, 0.54);
+  border-radius: 1px;
+  color: #fff;
+}
+
+.reject {
+  border-radius: 1px;
+  background-color: rgba(223, 0, 0, 0.54);
+  color: #fff;
+}
+
+.btnProcess:hover {
+  opacity: 1
+}

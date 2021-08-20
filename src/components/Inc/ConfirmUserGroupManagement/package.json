@@ -1,0 +1,6 @@
+{
+    "name": "ConfirmUserGroupManagement",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./ConfirmUserGroupManagement.js"
+}

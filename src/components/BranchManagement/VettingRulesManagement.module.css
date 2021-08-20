@@ -1,0 +1,29 @@
+.actor {
+    display: flex;
+    flex-direction: row;
+}
+.leftHeader {
+    display: flex;
+    flex-direction: column;
+}
+.leftHeader > div {
+    padding: 4px 0;
+}
+.quickFilter {
+    max-width: 320px;
+    width: calc(100% - 370px);
+    position: absolute;
+    right: 20px;
+}
+.buttonGroup {
+    justify-content: flex-start;
+}
+.tag {
+    color: var(--primary-dark);
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 8px;
+    background: var(--hover-default);
+    font-weight: 500;
+}

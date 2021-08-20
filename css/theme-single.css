@@ -1,0 +1,844 @@
+.hideBody .ag-body {
+    opacity: 0;
+}
+
+/******************css grid fresh ky2h ********************/
+
+.ag-theme-fresh {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+}
+
+.ag-theme-fresh.hideButton .ag-side-bar .ag-side-button,
+.ag-theme-fresh.hideButton .ag-side-bar .ag-side-button-custom {
+    display: none;
+}
+
+.ag-theme-fresh .flex {
+    height: auto;
+}
+
+.ag-theme-fresh .newsContainer .ag-row {
+    width: 100%
+}
+
+.userGroupManagement .ag-theme-fresh .ag-cell {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    /* justify-content: cen
+    ter; */
+}
+
+.ag-theme-fresh .ag-cell {
+    padding: 0 8px;
+    text-align: left;
+    line-height: 32px;
+    align-items: center;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.ag-theme-fresh .ag-cell .ag-cell-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ag-theme-fresh .ag-cell .ag-cell-wrapper .ag-selection-checkbox {
+    display: flex;
+}
+
+.ag-theme-fresh .ag-cell .ag-cell-wrapper .ag-selection-checkbox .ag-icon {
+    background-size: 20px !important;
+    filter: brightness(0) invert(1);
+}
+
+.ag-theme-fresh .ag-cell .ag-cell-wrapper .ag-selection-checkbox .ag-icon.ag-icon-checkbox-checked {
+    background: url(/common/checkbox-marked-outline.svg) center no-repeat;
+}
+
+.ag-theme-fresh .ag-cell .ag-cell-wrapper .ag-selection-checkbox .ag-icon.ag-icon-checkbox-unchecked {
+    background: url(/common/outline-check_box_outline_blank.svg) center no-repeat;
+}
+
+.ag-theme-fresh span.ag-column-select-checkbox {
+    margin-top: 3px;
+}
+
+.ag-theme-fresh .ag-cell>div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ag-theme-fresh .ag-menu {
+    z-index: 30;
+}
+
+.ag-theme-fresh .paginate {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left: 0;
+}
+
+.ag-theme-fresh .ag-header-cell {
+    font-weight: 400;
+    line-height: 32px;
+    height: 100%;
+}
+
+.ag-theme-fresh .ag-row-hover {
+    border: none;
+}
+
+.ag-theme-fresh .ag-header-container .ag-header-cell .ag-cell-label-container {
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.accountSumSearch {
+    height: 24px;
+    line-height: 24px;
+}
+
+
+.ag-theme-fresh .ag-icon-columns {
+    height: 16px;
+}
+
+.ag-theme-fresh .ag-icon {
+    height: 16px;
+    width: 24px;
+}
+
+/* quick menu */
+
+.ag-theme-fresh .ag-menu {
+    border: none;
+    width: 216px;
+}
+
+.ag-theme-fresh .ag-tab-header {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+}
+
+.ag-theme-fresh .ag-tab-header .ag-tab {
+    flex: 1;
+    position: relative;
+    border: none !important;
+    margin: 0;
+    padding: 8px;
+}
+
+.ag-theme-fresh .ag-tab-header .ag-tab.ag-tab-selected {
+    background: none;
+    border: none;
+}
+
+.ag-theme-fresh .ag-tab-header .ag-tab.ag-tab-selected:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.ag-theme-fresh .ag-menu .ag-menu-separator {
+    height: 1px;
+}
+
+.ag-theme-fresh .ag-menu .ag-menu-separator>span {
+    display: none;
+}
+
+.ag-theme-fresh .ag-icon-expanded {
+    background-position: 1px -4px;
+    background-size: 18px 18px;
+    margin-top: 5px;
+}
+
+.ag-theme-fresh .ag-group-contracted {
+    top: 6px;
+}
+
+/* generalMenuTab */
+
+.ag-theme-fresh .ag-menu .ag-menu-option {
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.ag-theme-fresh .ag-menu .ag-menu-option-icon {
+    display: flex;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 32px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ag-theme-fresh .ag-menu-list-canvas,
+.ag-theme-fresh .ag-menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ag-theme-fresh .ag-menu-list-canvas>div,
+.ag-theme-fresh .ag-menu-list>div {
+    display: flex;
+    align-items: center;
+}
+
+.ag-theme-fresh .ag-menu-option-text {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* end generalMenuTab */
+
+/* filterMenuTab */
+
+.ag-theme-fresh .ag-primary-cols-filter-wrapper, .ag-theme-fresh .ag-filter-body, .ag-theme-fresh .ag-filter .ag-filter-header-container {
+    height: 32px;
+    line-height: 24px;
+    display: flex;
+    padding: 0 8px;
+    align-items: center;
+}
+
+.ag-theme-fresh .ag-primary-cols-filter-wrapper:before, .ag-theme-fresh .ag-filter-body:before, .ag-theme-fresh .ag-filter #ag-mini-filter:before {
+    content: '';
+    display: block;
+    background: url("/common/magnify.svg") center no-repeat;
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+}
+
+.ag-theme-fresh .ag-primary-cols-filter, .ag-theme-fresh .ag-filter input[type="text"], .ag-theme-fresh .ag-filter input[type="date"] {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.ag-theme-fresh .ag-filter-select {
+    margin: 8px 8px 0 !important;
+    width: calc(100% - 16px) !important;
+}
+
+.ag-theme-fresh .ag-filter input, .ag-theme-fresh .ag-filter select {
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.ag-theme-fresh .ag-virtual-list-item {
+    padding: 0 8px;
+    box-sizing: border-box;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.ag-theme-fresh .ag-column-select-panel .ag-column-select-column {
+    padding: 0 8px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.ag-theme-fresh .ag-column-select-header {
+    height: 32px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.ag-theme-fresh .ag-filter-condition .ag-filter-select {
+    margin-top: 8px !important;
+}
+
+.ag-theme-fresh .ag-filter-condition>input {
+    display: none;
+}
+
+.ag-theme-fresh .ag-filter-condition>label {
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+}
+
+.ag-theme-fresh .ag-filter-condition>input+label {
+    margin-left: 8px;
+    padding-left: 22px;
+}
+
+select#filterType {
+    margin-top: 8px !important;
+}
+
+.ag-theme-fresh .ag-filter-condition>label:before, .ag-theme-fresh .ag-filter-condition>label:after {
+    content: ' ';
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ag-theme-fresh .ag-filter-condition>label:before {
+    width: 14px;
+    height: 14px;
+    top: -2px;
+    left: 0;
+}
+
+.ag-theme-fresh .ag-filter-condition>label:after {
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    left: 5px;
+    display: none;
+}
+
+.ag-theme-fresh .ag-filter-condition>input:checked+label:after {
+    display: inline-block
+}
+
+.ag-theme-fresh .ag-menu-column-select-wrapper {
+    height: 206px;
+}
+
+/* end filterMenuTab */
+
+.ag-theme-fresh .ag-primary-cols-header-panel {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 8px;
+}
+
+.ag-theme-fresh .ag-primary-cols-header-panel .ag-primary-cols-filter-wrapper {
+    padding: 0 5px;
+}
+
+.ag-theme-fresh .ag-column-select-panel .ag-column-tool-panel-column {
+    width: calc(100% - 16px);
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+}
+
+.ag-theme-fresh .ag-column-panel {
+    z-index: 1;
+}
+
+.ag-theme-fresh .ag-side-bar .ag-side-buttons div button {
+    background-color: inherit;
+    display: flex;
+    margin: 0;
+    padding: 2px 6px 0;
+    cursor: pointer;
+}
+
+.ag-theme-fresh .ag-side-bar .ag-side-buttons div button span {
+    writing-mode: unset;
+}
+
+.ag-theme-fresh .ag-column-drop.ag-font-style.ag-column-drop-horizontal.ag-column-drop-row-group {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: unset;
+}
+
+.customHeaderLabel {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    user-select: none;
+}
+
+.customHeaderLabel>.icon {
+    display: none;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.customHeaderLabel>.icon.active {
+    display: block;
+}
+
+.customHeaderLabel .text {
+    flex: 1;
+    overflow: hidden;
+}
+
+.customHeaderLabel .text>div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.customHeaderMenuButton {
+    display: none;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+.ag-header-cell {
+    text-align: left;
+}
+
+.ag-header-cell:hover .customHeaderMenuButton {
+    display: block;
+}
+
+.ag-theme-fresh .ag-column-tool-panel-column-label {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+}
+
+.ag-theme-fresh .ag-side-bar .ag-side-buttons {
+    width: auto;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    display: flex;
+}
+
+.ag-theme-fresh .ag-side-bar {
+    position: absolute;
+    right: 0;
+    max-height: calc(100% - 32px);
+    margin-top: 12px;
+}
+
+/* tam thoi cho den khi thay = canvas grid */
+.contractNoteContainer .ag-side-bar {
+    margin-top: 50px;
+}
+
+.businessLogContainer .ag-theme-fresh .ag-side-bar {
+    margin-top: 32px !important;
+}
+
+/* end quick menu */
+
+.ag-overlay-wrapper {
+    margin-top: 24px !important;
+}
+
+/* customize group header */
+
+.ag-theme-fresh .ag-column-drop.ag-font-style.ag-column-drop-horizontal.ag-column-drop-row-group div:first-child span {
+    height: 24px;
+    width: 24px;
+    background-size: 14px;
+    opacity: 0.95;
+    filter: unset;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+}
+
+.ag-column-drop-list>span:first-child {
+    padding-left: 32px
+}
+
+.ag-theme-fresh .ag-column-drop.ag-font-style.ag-column-drop-horizontal.ag-column-drop-row-group>span {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 32px;
+    width: 100%;
+}
+
+.ag-side-buttons .ag-side-button button {
+    border: none;
+}
+
+.ag-side-buttons .ag-side-button button>span {
+    display: none;
+}
+
+.ag-side-buttons .ag-side-button button .ag-icon-columns {
+    filter: unset;
+    background-size: 24px 24px;
+    width: 24px;
+    display: flex;
+}
+
+.ag-side-buttons .ag-side-button button .ag-icon-filter {
+    filter: unset;
+    background-size: 24px 24px;
+    width: 24px;
+}
+
+/*******************component ORDERLIST **********************/
+
+.businessLogContainer .ag-theme-fresh .ag-root-wrapper>div:first-child {
+    margin-top: 8px;
+}
+
+/* .watchlistRoot .ag-theme-fresh .ag-root-wrapper > div:first-child, */
+
+/* #newsContainer .ag-theme-fresh .ag-root-wrapper > div:first-child {
+    margin-bottom: 5px;
+} */
+
+/*******************component ACCOUNT MANAGEMENT **********************/
+
+.accountManagerContain {
+    height: calc( 100% - 32px);
+}
+
+.accountManagerContain .ag-cell .qe-label-green {
+    height: 24px;
+    align-items: center;
+    padding-left: 8px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    line-height: 24px;
+}
+
+.accountManagerContain .ag-cell .qe-label-gray {
+    height: 24px;
+    align-items: center;
+    padding-left: 8px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    line-height: 24px;
+}
+
+/*******************component Activities **********************/
+
+.businessLogContainer .ag-theme-fresh .decriptionContainer, .businessLogContainer .ag-theme-fresh .decription {
+    flex-direction: row;
+}
+
+.businessLogContainer .ag-theme-fresh .decriptionContainer {
+    margin-left: 6px;
+}
+
+/* -------------------------- */
+
+/*******************FILTER MENU**********************/
+
+.ag-theme-fresh .ag-filter .ag-set-filter-list {
+    height: auto;
+    width: auto;
+    padding-top: 4px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.ag-theme-fresh .ag-filter label {
+    display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.ag-theme-fresh .ag-filter .ag-filter-checkbox {
+    float: left;
+    height: 20px;
+    margin-right: 4px;
+    padding-top: 2px;
+}
+
+.ag-theme-fresh .ag-filter .ag-filter-value {
+    line-height: 16px;
+}
+
+.ag-theme-fresh .ag-menu-column-select-wrapper {
+    width: auto;
+}
+
+.ag-theme-fresh .ag-status-bar, .ag-side-bar {
+    display: flex;
+}
+
+/******************* component NEWS - modifying **********************/
+
+#newsContainer .news-row__download-btn {
+    display: flex;
+}
+
+#newsContainer .news-row__tags {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* -------------------------- */
+
+/*******************component account management **********************/
+
+.cardInfo {
+    padding: 0 8px;
+    line-height: 24px;
+    width: auto;
+    height: 24px;
+    display: inline-block;
+    border-radius: 1px;
+    font-style: normal;
+    font-stretch: condensed;
+    letter-spacing: normal;
+    text-align: center;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    flex-wrap: wrap;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.disable.opacityDisable {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/*******************component createuserdetais **********************/
+
+.qe-form-cell.status_wrapCell .text-overflow, .qe-form-cell.access_method_wrapCell .text-overflow, .qe-form-cell.api_access_wrapCell .text-overflow {
+    padding: 0px !important;
+}
+
+
+/*******************component ORDER **********************/
+
+.ag-theme-fresh .btn-group.btn-fix-size .btn {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+/* -------------------------- */
+
+.user-man-wrap .ag-theme-fresh .ag-cell[col-id="updated"]>div {
+    text-align: left;
+}
+
+.marketdata-wrap .ag-theme-fresh .ag-cell[col-id="updated"]>div, .ag-theme-fresh .ag-cell[col-id="trade_price"], .ag-theme-fresh div[col-id="trade_price"] .customHeaderLabel, .ag-theme-fresh div[col-id="value_traded"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="bid_price"], .ag-theme-fresh div[col-id="bid_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="change_percent"], .ag-theme-fresh div[col-id="change_percent"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="change_point"], .ag-theme-fresh div[col-id="change_point"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="open"], .ag-theme-fresh div[col-id="open"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="previous_close"], .ag-theme-fresh div[col-id="previous_close"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="high"], .ag-theme-fresh div[col-id="high"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="low"], .ag-theme-fresh div[col-id="low"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="close"], .ag-theme-fresh div[col-id="close"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="volume"], .ag-theme-fresh div[col-id="volume"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="bid_size"], .ag-theme-fresh div[col-id="bid_size"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="ask_size"], .ag-theme-fresh div[col-id="ask_size"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="bid_price"], .ag-theme-fresh div[col-id="bid_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="ask_price"], .ag-theme-fresh div[col-id="ask_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="trade_size_1"], .ag-theme-fresh div[col-id="trade_size_1"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="trade_size"], .ag-theme-fresh div[col-id="trade_size"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="saxo_id"], .ag-theme-fresh div[col-id="saxo_id"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="saxo_account_id"], .ag-theme-fresh div[col-id="saxo_account_id"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="hin"], .ag-theme-fresh div[col-id="hin"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="organisation_code"], .ag-theme-fresh div[col-id="organisation_code"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="cross_reference"], .ag-theme-fresh div[col-id="cross_reference"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="warrants_trading"], .ag-theme-fresh div[col-id="warrants_trading"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="options_trading"], .ag-theme-fresh div[col-id="options_trading"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="international_trading"], .ag-theme-fresh div[col-id="international_trading"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="bsb"], .ag-theme-fresh div[col-id="bsb"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="bank_account_number"], .ag-theme-fresh div[col-id="bank_account_number"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="work_phone"], .ag-theme-fresh div[col-id="work_phone"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="mobile_phone"], .ag-theme-fresh div[col-id="mobile_phone"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="home_phone"], .ag-theme-fresh div[col-id="home_phone"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="postcode"], .ag-theme-fresh div[col-id="postcode"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="post_code"], .ag-theme-fresh div[col-id="post_code"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="country_code"], .ag-theme-fresh div[col-id="country_code"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="cnote_company_name"], .ag-theme-fresh div[col-id="cnote_company_name"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="actionOrder"], .ag-theme-fresh div[col-id="actionOrder"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="account_value"], .ag-theme-fresh div[col-id="account_value"] .customHeaderLabel, .ag-theme-fresh div[col-id="state"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="quantity"], .ag-theme-fresh div[col-id="quantity"] .customHeaderLabel, .courseOfSaleContent .ag-theme-fresh .ag-cell[col-id="quantity"], .ag-theme-fresh div[col-id="price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="filled_quantity"], .ag-theme-fresh div[col-id="filled_quantity"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="limitPrice"], .ag-theme-fresh div[col-id="limitPrice"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="limit_price"], .ag-theme-fresh div[col-id="limit_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="total_convert"], .ag-theme-fresh div[col-id="total_convert"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="estimated_fees"], .ag-theme-fresh div[col-id="estimated_fees"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="stopPrice"], .ag-theme-fresh div[col-id="stopPrice"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="stop_price"], .ag-theme-fresh div[col-id="stop_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="filled_price"], .ag-theme-fresh div[col-id="filled_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="orderId"], .ag-theme-fresh div[col-id="orderId"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="order_action"], .ag-theme-fresh div[col-id="order_action"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="est_fees_aud"], .ag-theme-fresh div[col-id="est_fees_aud"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="est_total_aud"], .ag-theme-fresh div[col-id="est_total_aud"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="price"], .ag-theme-fresh div[col-id="price"] .customHeaderLabel .ag-theme-fresh .ag-cell[col-id="account_balance"], .ag-theme-fresh div[col-id="account_balance"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="total_market_value"], .ag-theme-fresh div[col-id="total_market_value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="Yesterday_settlement_price"], .ag-theme-fresh div[col-id="Yesterday_settlement_price"] .customHeaderLabel, .alert-list .ag-theme-fresh .ag-cell[col-id="status"], .alert-list .ag-theme-fresh div[col-id="status"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="leave_quantity"], .ag-theme-fresh div[col-id="leave_quantity"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="uncommitted_quantity"], .ag-theme-fresh div[col-id="uncommitted_quantity"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="avg_price"], .ag-theme-fresh div[col-id="avg_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="done_volume_today"], .ag-theme-fresh div[col-id="done_volume_today"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="done_value_today"], .ag-theme-fresh div[col-id="done_value_today"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="estimated_value"], .ag-theme-fresh div[col-id="estimated_value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="root_parent_order_number"], .ag-theme-fresh div[col-id="root_parent_order_number"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="done_value_total"], .ag-theme-fresh div[col-id="done_value_total"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="order_number"], .ag-theme-fresh div[col-id="order_number"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="parent_order_number"], .ag-theme-fresh div[col-id="parent_order_number"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="price_multiplier"], .ag-theme-fresh div[col-id="price_multiplier"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="sell_percent"], .ag-theme-fresh div[col-id="sell_percent"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="value"], .ag-theme-fresh div[col-id="value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="sell_price"], .ag-theme-fresh div[col-id="sell_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="sell_volume"], .ag-theme-fresh div[col-id="sell_volume"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="sell_value"], .ag-theme-fresh div[col-id="sell_value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="buy_percent"], .ag-theme-fresh div[col-id="buy_percent"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="buy_price"], .ag-theme-fresh div[col-id="buy_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="buy_volume"], .ag-theme-fresh div[col-id="buy_volume"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="net_value"], .ag-theme-fresh div[col-id="net_value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="net_volume"], .ag-theme-fresh div[col-id="net_volume"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="buy_value"], .ag-theme-fresh div[col-id="buy_value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="buy_count"], .ag-theme-fresh div[col-id="buy_count"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="sell_count"], .ag-theme-fresh div[col-id="sell_count"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="trades_count"], .ag-theme-fresh div[col-id="trades_count"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="market_percent"], .ag-theme-fresh div[col-id="market_percent"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="avg_prem"], .ag-theme-fresh div[col-id="avg_prem"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="total_value"], .ag-theme-fresh div[col-id="total_value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="traded_percent"], .ag-theme-fresh div[col-id="traded_percent"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="other"], .ag-theme-fresh div[col-id="other"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="total"], .ag-theme-fresh div[col-id="total"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="ID"], .ag-theme-fresh div[col-id="ID"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="ON"], .ag-theme-fresh div[col-id="ON"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="CT"], .ag-theme-fresh div[col-id="CT"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="market"], .ag-theme-fresh div[col-id="market"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="rank"], .ag-theme-fresh div[col-id="rank"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_OVN"], .ag-theme-fresh div[col-id="_OVN"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_SPC"], .ag-theme-fresh div[col-id="_SPC"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_MK"], .ag-theme-fresh div[col-id="_MK"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_MISC"], .ag-theme-fresh div[col-id="_MISC"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_IND"], .ag-theme-fresh div[col-id="_IND"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_INDSPC"], .ag-theme-fresh div[col-id="_INDSPC"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_EXOPT"], .ag-theme-fresh div[col-id="_EXOPT"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="_CXH"], .ag-theme-fresh div[col-id="_CXH"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="XT"], .ag-theme-fresh div[col-id="XT"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="VM"], .ag-theme-fresh div[col-id="VM"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="SX"], .ag-theme-fresh div[col-id="SX"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="OS"], .ag-theme-fresh div[col-id="OS"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="NX"], .ag-theme-fresh div[col-id="NX"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="EP"], .ag-theme-fresh div[col-id="EP"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="EC"], .ag-theme-fresh div[col-id="EC"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="CX"], .ag-theme-fresh div[col-id="CX"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="CX"], .ag-theme-fresh div[col-id="CX"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="TOTAL"], .ag-theme-fresh div[col-id="TOTAL"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="EC.EP"], .ag-theme-fresh div[col-id="EC.EP"] .customHeaderLabel, .stock-share-analysis .ag-theme-fresh .ag-cell[col-id="_OT"], .stock-share-analysis .ag-theme-fresh div[col-id="_OT"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="value_traded"], .ag-theme-fresh .ag-cell[col-id="unit_price"], .ag-theme-fresh div[col-id="unit_price"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="trade_value"], .ag-theme-fresh div[col-id="trade_value"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="total_fees"], .ag-theme-fresh div[col-id="total_fees"] .customHeaderLabel, .ag-theme-fresh .ag-cell[col-id="bid"], .ag-theme-fresh div[col-id="bid"] .customHeaderLabel {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#newsContainer .ag-theme-fresh .ag-cell>div {
+    width: 100%;
+    height: 100%;
+}
+
+#newsContainer .ag-theme-fresh .newsRow {
+    height: 100%;
+}
+
+#newsContainer .ag-header-cell:last-child {
+    text-align: left;
+}
+
+.ag-theme-fresh .ag-row-drag {
+    opacity: 0;
+    pointer-events: unset;
+    position: absolute;
+    top: 7px;
+    left: 24px;
+    width: 18px;
+    height: 18px;
+    z-index: 9;
+}
+
+.watchlistRoot .ag-theme-fresh .ag-row-drag {
+    left: 8px;
+}
+
+.ag-theme-fresh .ag-row:hover .ag-row-drag {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.ag-theme-fresh .remove-symbol, .ag-theme-fresh .modify-symbol {
+    position: absolute;
+    left: 48px;
+    top: 7px;
+    right: unset;
+    cursor: pointer;
+}
+
+.ag-theme-fresh .modify-symbol {
+    left: 0px;
+}
+
+.alert-list .ag-theme-fresh .remove-symbol {
+    left: 28px;
+}
+
+.news-row__tags .tag {
+    width: unset;
+    flex-wrap: unset;
+}
+
+.ag-theme-fresh .ag-row-animation .ag-row {
+    display: unset;
+    align-items: center;
+}
+
+.ag-tool-panel-wrapper {
+    display: none;
+}
+
+.ag-tool-panel-wrapper span[ref="eFilterName"] {
+    text-transform: uppercase;
+}
+
+.lst-check-filter {
+    width: calc(100% + 16px);
+    margin: 0 -8px;
+}
+
+.lst-check-filter .check-filter-item {
+    display: flex;
+    padding-left: 32px;
+    line-height: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.ag-icon-checkbox-unchecked, .ag-icon-checkbox-checked, .ag-icon-checkbox-indeterminate {
+    width: 16px !important;
+    transform: translateX(-3px)
+}
+
+.ag-icon-checkbox-unchecked {
+    background: url(/common/outline-check_box_outline_blank.svg) no-repeat;
+    background-position: -2px -1px;
+    background-size: 16px;
+}
+
+.ag-icon-checkbox-checked {
+    background: url(/common/checkbox-marked-outline.svg) no-repeat;
+    background-position: -2px -1px;
+    background-size: 16px;
+}
+
+.ag-icon-checkbox-indeterminate {
+    background: url(/common/outline-indeterminate_check_box.svg) no-repeat;
+    background-position: -2px -1px;
+    background-size: 16px;
+}
+
+.ag-theme-fresh .ag-filter .ag-set-filter-list {
+    padding-top: 0;
+}
+
+.ag-virtual-list-item {
+    cursor: pointer;
+}
+
+.ag-theme-fresh .ag-filter-condition>label:before {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    top: -1px;
+    left: 2px;
+}
+
+.ag-theme-fresh .ag-filter-condition>label:after {
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 5px
+}
+
+.ag-theme-fresh .ag-filter-condition>label>input {
+    height: 15px;
+    line-height: 15px;
+}
+
+.ag-filter-body-wrapper input {
+    text-indent: 8px;
+}
+
+.ag-filter-body-wrapper .ag-filter-body {
+    padding-left: 27px;
+    height: 24px;
+    margin: 8px 0;
+}
+
+.ag-filter-body-wrapper .ag-filter-body::before {
+    position: absolute;
+    width: 19px;
+    left: 10px;
+}
+
+.ag-filter-body-wrapper .ag-filter-condition {
+    padding: 8px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ag-filter-body-wrapper .ag-filter-condition:before {
+    display: block;
+    width: calc(100% - 16px);
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+#portfolioRoot .ag-theme-fresh .flex {
+    height: 100%;
+}
+
+.ag-theme-fresh .ag-filter-body {
+    min-height: 24px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ag-menu-column-select-wrapper .ag-icon-checkbox-unchecked, .ag-menu-column-select-wrapper .ag-icon-checkbox-checked, .ag-menu-column-select-wrapper .ag-icon-checkbox-indeterminate {
+    background-position: 0px 0px;
+    transform: none;
+}
+
+.ag-theme-fresh .ag-menu-column-select-wrapper .ag-column-tool-panel-column-label {
+    padding-left: 8px;
+}
+
+.stock-share-analysis-grid .ag-icon-checkbox-unchecked, .stock-share-analysis .ag-icon-checkbox-unchecked, .brk-stk .ag-icon-checkbox-unchecked, .gridDiv .ag-icon-checkbox-unchecked, .brkTrade .ag-icon-checkbox-unchecked, .bottomOpinion .ag-icon-checkbox-unchecked {
+    background-position: 0px 0px;
+}
+
+.ag-cell-wrapper .ag-cell-value, .ag-cell-wrapper .ag-group-value {
+    flex: 1;
+    height: 100%;
+}
+
+.ag-column-select-panel {
+    flex: 1;
+  }
+
+  .toobar-canvass .ag-column-select-panel {
+    overflow: unset;
+  }

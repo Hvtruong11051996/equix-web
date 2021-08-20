@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handleClickIcon 1`] = `[Function]`;
+
+exports[`render 1`] = `[Function]`;
+
+exports[`renderInfoInline 1`] = `[Function]`;
+
+exports[`renderInfoInline 2`] = `[Function]`;
+
+exports[`renderInfoInline 3`] = `[Function]`;
+
+exports[`renderInfoToggle 1`] = `[Function]`;
+
+exports[`renderInfoTxt 1`] = `[Function]`;
+
+exports[`renderInfoTxt 2`] = `[Function]`;
+
+exports[`tempFormatDigit 1`] = `[Function]`;
+
+exports[`tempFormatDigit 2`] = `[Function]`;
+
+exports[`tempFormatDigit 3`] = `[Function]`;
+
+exports[`tempFormatDigit 4`] = `[Function]`;
+
+exports[`tempFormatDigitColor 1`] = `[Function]`;
+
+exports[`tempFormatDigitColor 2`] = `[Function]`;
+
+exports[`tempFormatDigitColor 3`] = `[Function]`;
+
+exports[`tempFormatDigitColor 4`] = `[Function]`;
+
+exports[`tempFormatDigitColor 5`] = `[Function]`;
+
+exports[`tempFormatDigitColor 6`] = `[Function]`;
+
+exports[`tempFormatDigitColor 7`] = `[Function]`;
+
+exports[`tempFormatDigitColor 8`] = `[Function]`;
+
+exports[`tempFormatDigitColor 9`] = `[Function]`;
+
+exports[`tempFormatDigitColor 10`] = `[Function]`;
+
+exports[`tempFormatDigitColor 11`] = `[Function]`;
+
+exports[`tempFormatDigitPercent 1`] = `[Function]`;
+
+exports[`tempFormatDigitPercent 2`] = `[Function]`;
+
+exports[`tempFormatDigitPercent 3`] = `[Function]`;
+
+exports[`tempFormatDigitPercent 4`] = `[Function]`;
+
+exports[`tempFormatDigitPercent 5`] = `[Function]`;
+
+exports[`tempFormatDigitPercent 6`] = `[Function]`;

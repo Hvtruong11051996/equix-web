@@ -1,0 +1,6 @@
+{
+  "name": "Pin",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Pin.js"
+}

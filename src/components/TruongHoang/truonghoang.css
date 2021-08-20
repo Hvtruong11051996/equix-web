@@ -1,0 +1,129 @@
+.equix-app {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.equix-app .sign-up {
+  width: 400px;
+  height: 411px;
+  background: #171B29;
+  box-shadow: 0 2px 5px 0 #000;
+}
+
+.equix-app .sign-up .pop-up-title {
+  height: 64px;
+  background: #262B3E;
+}
+
+.equix-app .sign-up .pop-up-title .logo-equix {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.pop-up-title .logo-equix .pop-up__icon {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.logo-equix .equix-img {
+  display: flex;
+  justify-content: center;
+}
+
+.equix-app .sign-up .pop-up-title img {
+  height: 32px;
+  position: absolute;
+  top: 16px;
+}
+
+.equix-form {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+.equix-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.equix-group .equix-inputs {
+  background: #262B3E;
+  border: 1px solid #363C4E;
+  height: 40px;
+  margin-bottom: 8px;
+  color: #758695;
+  outline: none;
+  padding-left: 12px;
+}
+
+.equix-form .equix-action {
+  height: 40px;
+  background: #1D7CAD;
+  border: 1px solid #363C4E;
+  color: #EEF0F1;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.0969231px;
+  margin-top: 50px;
+}
+
+
+.main-equix {
+  width: 100%;
+  background: #171B29;
+}
+
+.equix-top {
+  height: 75px;
+  margin: 16px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.equix-top h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.0807692px;
+  color: #C5CBCE;
+  margin-bottom: 16px;
+}
+
+.equix-top__selector {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selector-live {
+  width: 50%;
+  height: 40px;
+  background: #1D7CAD;
+  display: flex;
+  justify-content: center;
+}
+
+.selector-demo {
+  width: 50%;
+  height: 40px;
+  background: #262B3E;
+  display: flex;
+  justify-content: center;
+}
+
+.equix-top__selector h4 {
+  color: #EEF0F1;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.0807692px;
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -1,0 +1,57 @@
+:root {
+  --color-highlight: #fff;
+  --color-white: #fff;
+  --background-scroll: #fff;
+  --background-green: rgba(0, 184, 0, 0.54);
+  --background-orange: rgba(236, 135, 14, 0.54);
+  --background-yellow: rgba(249, 244, 3, 0.54);
+  --background-gray: rgba(197, 203, 206, 0.54);
+  --background-red: rgba(223, 0, 0, 0.54);
+  --background-lightblue: #10a8b2;
+  --background-tag-operation: #10a8b2;
+  --background-tag-retail: #e43535;
+  --background-news-tag: #51a399;
+  --background-news-sign: #9a5e17;
+  --background-news-type: #b15677;
+  --shadow: 0 2px 5px 0 #000;
+  --shadow-top: 0 -2px 5px 0 #000;
+  /* primary */
+  --primary-dark: #171B29;
+  --primary-default: #1C2030;
+  --primary-light: #262B3E;
+  /* secondary */
+  --secondary-dark: #758695;  
+  --secondary-default: #C5CBCE;   /* màu text */
+  --secondary-light: #EDEFF0;
+  /* ascend */
+  --ascend-default: #1D7CAD;
+  --ascend-dark: #0e3e56;
+  /* buy/sell */
+  --buy-light: #51A399;
+  --buy-dark: #1B363F;
+  --buy-dark-hover: #152B32;
+  --sell-light: #B75D69;
+  --sell-dark: #442232;
+  --sell-dark-hover: #361B28;
+  /* sematic */
+  --semantic-primary: #262B3E;
+  --semantic-primary-hover: #1B2035;
+  --semantic-info: #1D7CAD;
+  --semantic-info-hover: #156194;
+  --semantic-success: #51A399;
+  --semantic-success-hover: #3B8C89;
+  --semantic-warning: #CAAF16;
+  --semantic-warning-hover: #AD9310;
+  --semantic-danger: #B75D69;
+  --semantic-danger-hover: #9D4358;
+  /* other */
+  --hover-default: #9da2a4;
+  --border: #363C4E;
+  --divider: #363C4E;
+  --background: #303241;
+  --menu-text-active: #edeff0;
+  --menu-background-active: #1E2333;
+  --menu-text-hover: #edeff0;
+  --menu-background-hover: #173D5A;
+  --invert: 0;
+}

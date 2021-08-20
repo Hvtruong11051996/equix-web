@@ -1,0 +1,6 @@
+{
+  "name": "WatchlistBottom",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./WatchlistBottom.js"
+}

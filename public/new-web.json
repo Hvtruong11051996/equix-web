@@ -1,0 +1,830 @@
+{
+    "dev1": {
+        "env": "dev1",
+        "project": [
+            "dev1"
+        ],
+        "branding": {
+            "fav": "https://firebasestorage.googleapis.com/v0/b/quant-edge-23211.appspot.com/o/favicon.png?alt=media",
+            "background": "https://firebasestorage.googleapis.com/v0/b/quant-edge-23211.appspot.com/o/background.jpg?alt=media",
+            "logoDark": "https://firebasestorage.googleapis.com/v0/b/quant-edge-23211.appspot.com/o/logoDark.svg?alt=media",
+            "logoLight": "https://firebasestorage.googleapis.com/v0/b/quant-edge-23211.appspot.com/o/logoLight.svg?alt=media",
+            "provider": "https://firebasestorage.googleapis.com/v0/b/quant-edge-23211.appspot.com/o/provider.png?alt=media",
+            "providerLight": "https://firebasestorage.googleapis.com/v0/b/quant-edge-23211.appspot.com/o/providerLight.png?alt=media",
+            "env_desc": ""
+        },
+        "api": {
+            "baseUrl": "https://dev1-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://dev1-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://dev1-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://dev1-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://dev1-biz-api.equix.app/v1"
+            },
+            "appStore": "https://apps.apple.com/vn/app/equix/id1472968511",
+            "ggPlay": "https://play.google.com/store/apps/details?id=com.quantedge.equixdemo",
+            "website": "https://equixapp.com/"
+        },
+        "roles": {
+            "noBreakWord": true,
+            "bannerStax": true,
+            "searchSchedule": true,
+            "openingAccount": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": true,
+            "viewMorningStar": true,
+            "viewTipRank": true,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": true,
+            "showEquity": true,
+            "viewMarketNew": true,
+            "showAuWatchlist": true,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "showDemoWatchlist": true,
+            "viewReports": true,
+            "dayReport": false,
+            "viewInsights": true,
+            "hideMiniChart": false,
+            "showAdditionalFees": true,
+            "autoLogin": true,
+            "disableSymbolClass": [],
+            "disableExchange": [
+                "NSX"
+            ],
+            "symbol": "ANZ",
+            "useListLayoutDemo": false,
+            "userTemplate": "user-template.xlsx"
+        }
+    },
+    "demo": {
+        "env": "demo",
+        "project": [
+            "dev1",
+            "equix",
+            "morrison",
+            "ricard",
+            "mps"
+        ],
+        "demo": true,
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/demo/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/demo/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/demo/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/demo/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/demo/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/demo/logoQELight.svg",
+            "env_desc": "lang_demo"
+        },
+        "api": {
+            "baseUrl": "https://demo-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://demo-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://demo-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://demo-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://demo-biz-api.equix.app/v1"
+            },
+            "appStore": "https://apps.apple.com/vn/app/equix/id1472968511",
+            "ggPlay": "https://play.google.com/store/apps/details?id=com.quantedge.equixdemo",
+            "website": "https://demo.equix.app"
+        },
+        "roles": {
+            "searchSchedule": true,
+            "openingAccount": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": true,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": true,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "dayReport": false,
+            "enableRealtimePortfolioByMkt": true,
+            "showNews": true,
+            "hideMiniChart": false,
+            "hideNSXPriceBoard": true,
+            "autoLogin": true,
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "symbol": "ANZ",
+            "userTemplate": "demo-user-template.xlsx",
+            "useListLayoutDemo": true
+        }
+    },
+    "bidvDemo": {
+        "env": "bidvDemo",
+        "project": [
+            "bidv"
+        ],
+        "demo": true,
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/bidv/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/bidv/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/bidv/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/bidv/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/demo/provider.png",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/demo/providerLight.png",
+            "env_desc": "lang_demo"
+        },
+        "api": {
+            "baseUrl": "https://demo-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://demo-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://demo-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://demo-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://demo-biz-api.equix.app/v1"
+            },
+            "appStore": "",
+            "ggPlay": "",
+            "website": "https://equixapp.com/"
+        },
+        "roles": {
+            "searchSchedule": true,
+            "openingAccount": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": true,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": true,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "dayReport": true,
+            "enableRealtimePortfolioByMkt": true,
+            "showNews": true,
+            "hideMiniChart": false,
+            "hideNSXPriceBoard": true,
+            "autoLogin": true,
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "symbol": "ANZ",
+            "userTemplate": "demo-user-template.xlsx",
+            "useListLayoutDemo": true
+        }
+    },
+    "equix": {
+        "env": "equix",
+        "project": [
+            "equix"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/equix/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/equix/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/equix/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/equix/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/equix/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/equix/logoQELight.svg",
+            "env_desc": "lang_live"
+        },
+        "api": {
+            "baseUrl": "https://morrison-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://morrison-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://morrison-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://morrison-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://morrison-biz-api.equix.app/v1"
+            },
+            "appStore": "https://apps.apple.com/vn/app/equix/id1472968511",
+            "ggPlay": "https://play.google.com/store/apps/details?id=com.quantedge.equixdemo",
+            "website": "https://equixapp.com/"
+        },
+        "roles": {
+            "termSignUp": true,
+            "noBreakWord": true,
+            "dontShowSMSNoti": true,
+            "searchSchedule": true,
+            "openingAccount": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": false,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": false,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "dayReport": true,
+            "showNews": true,
+            "enableRealtimePortfolioByMkt": true,
+            "hideNSXPriceBoard": true,
+            "hideMiniChart": false,
+            "symbol": "ANZ",
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "useListLayoutDemo": false,
+            "userTemplate": "user-template.xlsx"
+        }
+    },
+    "morrison": {
+        "env": "morrison",
+        "project": [
+            "morrison"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/morrison/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/morrison/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/morrison/logoDark.png",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/morrison/logoLight.png",
+            "provider": "https://storage.googleapis.com/equix-website/img/morrison/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/morrison/logoQELight.svg",
+            "env_desc": "lang_live"
+        },
+        "api": {
+            "baseUrl": "https://morrison-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://morrison-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://morrison-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://morrison-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://morrison-biz-api.equix.app/v1"
+            },
+            "appStore": "https://apps.apple.com/vn/app/morrison-mobile/id1569785757",
+            "ggPlay": "https://play.google.com/store/apps/details?id=com.morrison.mobile",
+            "website": "https://www.morrisonsecurities.com/"
+        },
+        "roles": {
+            "termSignUp": true,
+            "noBreakWord": true,
+            "dontShowSMSNoti": true,
+            "searchSchedule": true,
+            "openingAccount": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": false,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": false,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "dayReport": true,
+            "showNews": true,
+            "enableRealtimePortfolioByMkt": true,
+            "hideNSXPriceBoard": true,
+            "hideMiniChart": false,
+            "symbol": "ANZ",
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "useListLayoutDemo": false,
+            "userTemplate": "user-template.xlsx"
+        }
+    },
+    "ricard": {
+        "env": "ricard",
+        "project": [
+            "ricard"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/ricard/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/ricard/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/ricard/logoDark.png",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/ricard/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/ricard/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/ricard/logoQELight.svg",
+            "env_desc": "lang_live"
+        },
+        "api": {
+            "baseUrl": "https://morrison-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://morrison-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://morrison-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://morrison-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://morrison-biz-api.equix.app/v1"
+            },
+            "appStore": "",
+            "ggPlay": "https://play.google.com/store/apps/details?id=com.ricard.trade4profit",
+            "website": "https://www.ricardgroup.com.au/"
+        },
+        "roles": {
+            "termSignUp": true,
+            "noBreakWord": true,
+            "searchSchedule": true,
+            "openingAccount": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": false,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": false,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "showNews": true,
+            "enableRealtimePortfolioByMkt": true,
+            "hideNSXPriceBoard": true,
+            "hideMiniChart": false,
+            "symbol": "ANZ",
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "useListLayoutDemo": false,
+            "userTemplate": "user-template.xlsx"
+        }
+    },
+    "mps": {
+        "env": "mps",
+        "project": [
+            "mps"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/mps/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/mps/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/mps/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/mps/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/mps/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/mps/logoQELight.svg",
+            "env_desc": "lang_live"
+        },
+        "api": {
+            "baseUrl": "https://morrison-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://morrison-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://morrison-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://morrison-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://morrison-biz-api.equix.app/v1"
+            },
+            "appStore": "",
+            "ggPlay": "",
+            "website": "https://www.mpsecurities.com.au/"
+        },
+        "roles": {
+            "searchSchedule": true,
+            "openingAccount": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": false,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": false,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "showNews": true,
+            "enableRealtimePortfolioByMkt": true,
+            "hideNSXPriceBoard": true,
+            "hideMiniChart": false,
+            "symbol": "ANZ",
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "useListLayoutDemo": false,
+            "userTemplate": "user-template.xlsx"
+        }
+    },
+    "bidv": {
+        "env": "bidv",
+        "project": [
+            "bidv"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/bidv/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/bidv/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/bidv/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/bidv/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/bidv/provider.png",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/bidv/providerLight.png",
+            "env_desc": "lang_live"
+        },
+        "api": {
+            "baseUrl": "https://prod8-retail-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://prod8-market-feed.equix.app/v1",
+                "/portfolio/operation": "https://prod8-biz-api.equix.app/v1",
+                "/portfolio?account_id=": "https://prod8-biz-api.equix.app/v1",
+                "/noti/notification/streaming-data": "https://prod8-biz-api.equix.app/v1"
+            },
+            "appStore": "",
+            "ggPlay": "",
+            "website": "https://equixapp.com/"
+        },
+        "roles": {
+            "unshowProvider": true,
+            "openingAccount": false,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewContractNotes": false,
+            "viewContractList": true,
+            "viewMorningStar": false,
+            "viewTipRank": false,
+            "viewInsights": false,
+            "viewBrokerData": false,
+            "viewMarketOverview": true,
+            "viewMarketNew": false,
+            "viewAccountDetail": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "viewReports": false,
+            "showFuture": true,
+            "showEquity": false,
+            "showAuWatchlist": false,
+            "showDemoWatchlist": true,
+            "showWhatsNewFu": true,
+            "enableRealtimePortfolioByMkt": true,
+            "hideMiniChart": false,
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "timezone": "Asia/Ho_Chi_Minh",
+            "symbol": "KCE#.IFUS",
+            "userTemplate": "bidv-user-template.xlsx",
+            "useListLayoutDemo": false,
+            "countryCode": "vn",
+            "phoneCode": 84
+        }
+    },
+    "staxDemo": {
+        "env": "staxDemo",
+        "demo": true,
+        "project": [
+            "stax"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/stax/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/stax/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/stax/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/stax/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/stax/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/stax/logoQELight.svg",
+            "env_desc": "lang_demo"
+        },
+        "api": {
+            "baseUrl": "https://demo-retail-api.stax.trade",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://demo-market-feed.stax.trade/v1",
+                "/portfolio/operation": "https://demo-biz-api.stax.trade/v1",
+                "/portfolio?account_id=": "https://demo-biz-api.stax.trade/v1",
+                "/noti/notification/streaming-data": "https://demo-biz-api.stax.trade/v1"
+            },
+            "appStore": "",
+            "ggPlay": "",
+            "website": "https://equixapp.com/"
+        },
+        "roles": {
+            "noBreakWord": true,
+            "bannerStax": true,
+            "openingAccount": true,
+            "onlyIndividual": true,
+            "removeNumberOfApplicant": true,
+            "addRelationshipTypeDefault": true,
+            "removeSettlementDetails": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": true,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": false,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "enableRealtimePortfolioByMkt": true,
+            "showNews": true,
+            "hideMiniChart": false,
+            "showAdditionalFees": true,
+            "dontShowRoleDetail": true,
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "symbol": "ANZ",
+            "userTemplate": "demo-user-template.xlsx",
+            "useListLayoutDemo": false
+        }
+    },
+    "stax": {
+        "env": "stax",
+        "project": [
+            "stax"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/stax/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/stax/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/stax/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/stax/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/stax/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/stax/logoQELight.svg",
+            "env_desc": "lang_live"
+        },
+        "api": {
+            "baseUrl": "https://prod1-retail-api.stax.trade",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://prod1-market-feed.stax.trade/v1",
+                "/portfolio/operation": "https://prod1-biz-api.stax.trade/v1",
+                "/portfolio?account_id=": "https://prod1-biz-api.stax.trade/v1",
+                "/noti/notification/streaming-data": "https://prod1-biz-api.stax.trade/v1"
+            },
+            "appStore": "",
+            "ggPlay": "",
+            "website": "https://equixapp.com/"
+        },
+        "roles": {
+            "submitImmediately": true,
+            "noBreakWord": true,
+            "bannerStax": true,
+            "openingAccount": true,
+            "onlyIndividual": true,
+            "removeNumberOfApplicant": true,
+            "addRelationshipTypeDefault": true,
+            "removeSettlementDetails": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": true,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": false,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "enableRealtimePortfolioByMkt": true,
+            "showNews": true,
+            "hideNSXPriceBoard": true,
+            "hideMiniChart": false,
+            "showAdditionalFees": true,
+            "dontShowRoleDetail": true,
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "symbol": "ANZ",
+            "useListLayoutDemo": false,
+            "userTemplate": "user-template.xlsx"
+        }
+    },
+    "staxUat": {
+        "env": "staxUat",
+        "envName": "UAT",
+        "project": [
+            "staxUat"
+        ],
+        "branding": {
+            "fav": "https://storage.googleapis.com/equix-website/img/stax/favicon.png",
+            "background": "https://storage.googleapis.com/equix-website/img/stax/background.jpg",
+            "logoDark": "https://storage.googleapis.com/equix-website/img/stax/logoDark.svg",
+            "logoLight": "https://storage.googleapis.com/equix-website/img/stax/logoLight.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/stax/logoQE.svg",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/stax/logoQELight.svg",
+            "env_desc": "lang_uat"
+        },
+        "api": {
+            "baseUrl": "https://uat-retail-api.stax.trade",
+            "version": "v1",
+            "custom": {
+                "marketData": "https://uat-market-feed.stax.trade/v1",
+                "/portfolio/operation": "https://uat-biz-api.stax.trade/v1",
+                "/portfolio?account_id=": "https://uat-biz-api.stax.trade/v1",
+                "/noti/notification/streaming-data": "https://uat-biz-api.stax.trade/v1"
+            },
+            "appStore": "",
+            "ggPlay": "",
+            "website": "https://equixapp.com/"
+        },
+        "roles": {
+            "submitImmediately": true,
+            "noBreakWord": true,
+            "bannerStax": true,
+            "openingAccount": true,
+            "onlyIndividual": true,
+            "removeNumberOfApplicant": true,
+            "addRelationshipTypeDefault": true,
+            "removeSettlementDetails": true,
+            "useNewMarketData": true,
+            "showFooter": false,
+            "contingentOrder": false,
+            "viewMorningStar": true,
+            "viewTipRank": true,
+            "viewBrokerData": true,
+            "viewMarketOverview": true,
+            "viewAccountDetail": false,
+            "viewContractNotes": true,
+            "viewContractList": true,
+            "viewInsights": true,
+            "viewMarketNew": true,
+            "viewMarginControl": true,
+            "viewProcessEod": true,
+            "showFuture": false,
+            "showEquity": true,
+            "showAuWatchlist": true,
+            "showDemoWatchlist": false,
+            "viewReports": true,
+            "enableRealtimePortfolioByMkt": true,
+            "showNews": true,
+            "hideMiniChart": false,
+            "showAdditionalFees": true,
+            "dontShowRoleDetail": true,
+            "disableSymbolClass": [
+                "warrant",
+                "etf",
+                "mf",
+                "future"
+            ],
+            "disableExchange": [
+                "NSX"
+            ],
+            "symbol": "ANZ",
+            "userTemplate": "demo-user-template.xlsx",
+            "useListLayoutDemo": false
+        }
+    },
+    "guest": {
+        "env": "guest",
+        "branding": {
+            "background": "/branding/background/dev1.jpg",
+            "logoDark": "/branding/login-logo/dark/equix.svg",
+            "logoLight": "/branding/login-logo/light/equix.svg",
+            "provider": "https://storage.googleapis.com/equix-website/img/dev1/provider.png",
+            "providerLight": "https://storage.googleapis.com/equix-website/img/dev1/providerLight.png",
+            "env_desc": "lang_guest"
+        },
+        "api": {
+            "baseUrl": "https://guest-api.equix.app",
+            "version": "v1",
+            "custom": {
+                "/feed-snapshot": "https://guest-api.equix.app/v1",
+                "/feed-delayed-snapshot": "https://guest-api.equix.app/v1",
+                "/historical": "https://guest-api.equix.app/v1",
+                "/market-info": "https://guest-api.equix.app/v1",
+                "/noti/notification/streaming-data/user/guest": "https://guest-api.equix.app/v1"
+            }
+        },
+        "auth": {
+            "username": "@guest@quant-edge.com",
+            "password": "Abc123456",
+            "pin": "010203"
+        },
+        "roles": {
+            "showDemoWatchlist": true,
+            "showFooter": false,
+            "hideMiniChart": false,
+            "disableSymbolClass": [],
+            "disableExchange": [
+                "NSX"
+            ],
+            "symbol": "ANZ",
+            "timezone": "Asia/Ho_Chi_Minh",
+            "useListLayoutDemo": false
+        }
+    },
+    "common": {
+        "background": "/branding/background/dev1.jpg",
+        "logo": "/branding/login-logo/dark/equix.svg",
+        "version": "20200505",
+        "nextIosVersion": "20201127",
+        "nextAndroidVersion": "20201127",
+        "currentIosVersion": "20200414",
+        "currentAndroidVersion": "20200414",
+        "maintain": false,
+        "project": "dev1"
+    }
+}

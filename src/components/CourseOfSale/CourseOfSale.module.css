@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.container .grid {
+    flex: 1;
+}
+.container :global(.inputAddon) {
+    width: 100%;
+}
+.collapse {
+    display: none;
+}
+.symbolInfo {
+    padding: 8px;
+}
+.symbol {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 4px 0;
+}
+.price > span + span {
+    margin-left: 8px;
+}

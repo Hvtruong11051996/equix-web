@@ -1,0 +1,294 @@
+@import '../../core.module.css';
+.container {
+  height: 100%;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-dark);
+  overflow: hidden;
+}
+
+.cell {
+  display: flex;
+  justify-content: space-between;
+  min-height: 32px;
+  align-items: flex-start;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 32px;
+  padding-left: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-light);
+}
+
+.mainTitle {
+  color: var(--secondary-default);
+  font-size: var(--size-7);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.title {
+  color: var(--secondary-default);
+  font-size: var(--size-3);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.wrapper {
+  color: var(--secondary-default);
+  background-color: var(--primary-dark);
+  box-sizing: border-box;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.searchAccountContainer {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: rgba(197, 203, 206, 0.7);
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.accountLabel {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left: 8px;
+  color: var(--secondary-default);
+  letter-spacing: -0.1px;
+}
+
+.innerContainer {
+  flex: 2;
+  overflow: auto;
+}
+
+.bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterAndMore {
+  display: flex
+}
+
+.filterAndMore>:global(.navbar.more) {
+  flex: 1
+}
+
+.innerWrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.anotherWrapper {
+  display: block;
+  justify-content: center;
+  max-height: 100%;
+  margin: 0 -8px;
+}
+
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.itemRow:hover {
+  background-color: #1C2733 !important;
+}
+
+.itemLabel {
+  color: rgba(197, 203, 206, 0.7);
+  white-space: nowrap;
+  font-weight: normal;
+  margin: 0;
+  font-family: Roboto;
+  display: inline-block;
+  line-height: 32px;
+}
+
+.itemInfo {
+  color: var(--text-color_primary_dark);
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px !important;
+  margin: 0;
+  word-wrap: break-word;
+  float: right;
+  line-height: 32px;
+}
+
+.productItem {
+  background-color: #147a88;
+  color: var(--primary-dark);
+  display: inline-flex;
+  margin-left: 16px;
+  height: 16px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 1px;
+  float: right;
+}
+
+.part:nth-child(odd) .itemRow:nth-child(even), .part:nth-child(even) .itemRow:nth-child(odd) {
+  background: var(--primary-default);
+}
+
+:global(.w800) .anotherWrapper {
+  display: flex;
+}
+
+:global(.w800) .partWrapper {
+  flex: 1;
+}
+
+:global(.w800) .part:nth-child(even) .itemRow:nth-child(even) {
+  background: unset;
+}
+
+:global(.w800) .part:nth-child(even) .itemRow:nth-child(odd) {
+  background: var(--primary-default);
+}
+
+:global(.w1280) .partWrapper {
+  display: flex;
+  flex: 1;
+}
+
+:global(.w1280) .part {
+  flex: 1;
+}
+
+:global(.w1280) .part:nth-child(even) .itemRow:nth-child(odd) {
+  background: unset;
+}
+
+:global(.w1280) .part:nth-child(even) .itemRow:nth-child(even) {
+  background: var(--primary-default);
+}
+
+.contentButton {
+  height: 24px;
+  padding: 0 12px;
+  border: solid 1px var(--border);
+  background-color: var(--primary-light);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: var(--size-2);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.contentButton+.contentButton {
+  margin-left: 16px;
+}
+
+.btnAddRemove {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-top: 8px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+}
+
+.formContent+.buttonGroup {
+  padding: 16px;
+}
+
+.button {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-light);
+  cursor: pointer;
+  border: 1px solid var(--semantic-primary)
+}
+
+.buttonGroup .button.checkBtn {
+  background: var(--semantic-info);
+}
+
+.buttonGroup.disableBtn .button.checkBtn {
+  opacity: .54;
+  cursor: not-allowed;
+}
+
+.buttonGroup.disableBtn .button.checkBtn .buttonContainer {
+  pointer-events: none;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.button.disableBtn .buttonContainer {
+  pointer-events: none;
+}
+
+.button+.button {
+  margin-left: 8px;
+}
+
+.popupInput {
+  width: 100%;
+  height: 100%;
+  background: var(--primary-light);
+  border: 1px solid var(--border);
+  color: var(--secondary-default);
+  box-sizing: border-box;
+  resize: none;
+}

@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: equix-website
+  namespace: website
+  labels:
+    app: equix-website
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: equix-website
+    spec:
+      containers:
+        - name: equix-website
+          image: ##IMAGE_LINK##
+          ports:
+            - containerPort: 80

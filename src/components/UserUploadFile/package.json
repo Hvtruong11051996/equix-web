@@ -1,0 +1,6 @@
+{
+  "name": "UserUploadFile",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./UserUploadFile.js"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "MarketDepth",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./MarketDepth.js"
+}

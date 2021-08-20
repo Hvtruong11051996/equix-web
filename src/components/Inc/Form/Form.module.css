@@ -1,0 +1,505 @@
+.error {
+  padding: 8px;
+  opacity: .86;
+  pointer-events: none;
+  border-radius: 3px;
+  background: var(--semantic-danger);
+  color: var(--color-white);
+  /* text-transform: capitalize; */
+}
+
+.error[style*=left]:before,
+.error[style*=right]:before {
+  content: ' ';
+  display: block;
+  border-style: solid;
+  position: absolute;
+  top: 7px;
+}
+
+.error[style*="right"]:before {
+  border-color: transparent transparent transparent var(--semantic-danger);
+}
+
+.error[style*="left"]:before {
+  border-color: transparent var(--semantic-danger) transparent transparent;
+}
+
+.error[style*=right]:before {
+  border-width: 8px 0 8px 8px;
+  right: -8px;
+}
+
+.error[style*=left]:before {
+  border-width: 8px 8px 8px 0;
+  left: -8px;
+}
+
+.required {
+  color: var(--semantic-danger);
+  margin-left: 4px;
+}
+
+.form {
+  width: 100%;
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+.form :global(.topIconCalendar path) {
+  fill: var(--secondary-default);
+}
+
+.help {
+  margin: 4px 4px 0 0;
+  cursor: help;
+  flex-shrink: 0;
+  line-height: 12px;
+  height: 12px;
+}
+
+.help svg {
+  width: 16px;
+  height: 16px;
+}
+
+.help path {
+  fill: var(--secondary-default);
+}
+
+.cell:hover .help path {
+  fill: var(--menu-text-hover);
+}
+
+.form input,
+.form textarea {
+  flex: 1;
+  outline: none;
+  padding: 0 8px;
+  width: 100%;
+  height: 24px;
+  line-height: 22px;
+  box-sizing: border-box;
+  background-color: var(--primary-light);
+  border: 1px solid var(--border);
+  color: var(--secondary-default);
+  text-align: right;
+}
+
+.form div:not(.searchLocal) :global(.searchAccountContainer) input {
+  text-align: left;
+}
+
+.form textarea {
+  height: 72px;
+  resize: none;
+}
+
+.form :global(.react-datepicker-wrapper) input {
+  padding: 0px;
+}
+
+.form :global(.react-datepicker-wrapper) {
+  margin-right: 0px !important;
+}
+
+.invalid {
+  border: 1px solid var(--semantic-danger) !important;
+  outline: var(--semantic-danger);
+  box-sizing: border-box;
+}
+
+.invalid :global(.dropDown) {
+  border: none;
+}
+
+.invalid :global(.checkbox) {
+  border: 1px solid var(--semantic-danger) !important;
+  outline: var(--semantic-danger);
+  box-sizing: border-box;
+}
+
+.termsText>a {
+  color: var(--semantic-info);
+  cursor: pointer;
+}
+
+.term .invalid path {
+  fill: var(--semantic-danger);
+}
+
+.header {
+  background: none;
+}
+
+.right {
+  display: none;
+}
+
+.hide .right {
+  display: block;
+}
+
+.hide .down {
+  display: none;
+}
+
+.hide+.group,
+.hide+.slideContent {
+  display: none;
+}
+
+.groupTitle {
+  position: relative;
+  padding: 0 8px;
+  line-height: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: var(--size-5);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+:global(.isAccountDetails) .groupTitle {
+  background-color: var(--primary-light)
+}
+
+.groupSpan {
+  display: inline-flex;
+  align-items: center;
+  transform: translate(0px, 5px)
+}
+
+.groupTitle>.subTitle {
+  font-size: var(--size-2);
+  line-height: 12px;
+}
+
+.groupTitle .open {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+.group {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.group>* {
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.marginForm .group {
+  padding: 0 64px;
+}
+
+.marginForm .slide,
+.marginForm .group>.item {
+  margin: 0 -64px;
+}
+
+.marginForm .item+.item .group:last-child:before {
+  content: ' ';
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--primary-light);
+  margin: 0 8px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.cell {
+  display: flex;
+  justify-content: space-between;
+  min-height: 32px;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.cellVertical {
+  flex-direction: column;
+  padding: 0 8px 4px;
+}
+
+.cellVertical>div {
+  width: 100%;
+}
+
+.cellVertical input {
+  text-align: left;
+}
+
+.cellVertical .phoneCode+input {
+  text-align: right;
+}
+
+:global(.w960) .cell {
+  width: 50%;
+  display: inline-flex;
+}
+
+:global(.w960) .cell:nth-child(2n+1):last-child {
+  padding-right: calc(50% + 8px);
+}
+
+.note {
+  margin-top: 8px;
+  text-transform: initial;
+  text-align: left;
+}
+
+.cell:hover {
+  background: var(--menu-background-hover) !important;
+  color: var(--menu-text-hover) !important;
+}
+
+.cell>:first-child {
+  flex: 1;
+  min-width: 0;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-right: 8px;
+}
+
+.cell>:last-child {
+  flex: 2;
+  min-width: 0;
+  line-height: 24px;
+  text-align: right;
+}
+
+.stripe .cell:nth-child(odd) {
+  background: var(--primary-default);
+}
+
+:global(.w960) .stripe .cell:nth-child(4n+1),
+:global(.w960) .stripe .cell:nth-child(4n+2) {
+  background: var(--primary-default);
+}
+
+:global(.w960) .stripe .cell:nth-child(4n+3),
+:global(.w960) .stripe .cell:nth-child(4n+4) {
+  background: none;
+}
+
+:global(.w960) .stripe .item:nth-child(2n) .cell:nth-child(4n+1),
+:global(.w960) .stripe .item:nth-child(2n) .cell:nth-child(4n+2) {
+  background: none;
+}
+
+:global(.w960) .stripe .item:nth-child(2n) .cell:nth-child(4n+3),
+:global(.w960) .stripe .item:nth-child(2n) .cell:nth-child(4n+4) {
+  background: var(--primary-default);
+}
+
+.fullWidth .cell {
+  width: 100% !important;
+  padding-right: 8px !important;
+}
+
+.fullWidth {
+  width: 100%
+}
+
+:global(.w960) .fullWidth .cell>:last-child {
+  flex: 5;
+}
+
+.stripe .fullWidth .cell:nth-child(odd) {
+  background: var(--primary-default);
+}
+
+.stripe .fullWidth .cell:nth-child(even) {
+  background: none;
+}
+
+.noData {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}
+
+.slideContent {
+  overflow: hidden;
+}
+
+.slideContent>div {
+  transition: transform .3s;
+}
+
+.slideContainer {
+  display: flex;
+}
+
+.slideContainer>* {
+  flex: 1;
+}
+
+.slideAction {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.slide .item+.item .group:last-child:before {
+  display: none;
+}
+
+.slideAction .prev {
+  cursor: pointer;
+}
+
+.slideAction .next {
+  cursor: pointer;
+}
+
+.editableDiv:empty:before {
+  content: attr(placeholder);
+  display: flex;
+  content: attr(placeholder);
+  color: var(--secondary-dark);
+}
+.placeholderRight:empty:before {
+  content: attr(placeholder);
+  display: unset;
+  content: attr(placeholder);
+  color: var(--secondary-dark);
+}
+
+.datePickerIcon {
+  height: 18px;
+  width: 18px;
+  padding: 2px;
+}
+
+.datePickerIcon path {
+  fill: var(--secondary-default);
+}
+
+.file {
+  text-align: left;
+  color: var(--semantic-info);
+}
+
+.searchLocal :global(.inputAddon .placeHolder) {
+  text-align: right !important;
+  text-transform: capitalize;
+  width: calc(100% - 16px);
+}
+
+.searchLocal input {
+  text-align: right !important;
+}
+
+.divide {
+  height: 1px;
+  background: var(--primary-light);
+  margin: 0 8px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.form :global(.inputAddon) {
+  margin-top: 4px;
+}
+
+.form .searchLocal :global(.inputAddon) {
+  margin-top: 0;
+}
+
+.phoneCode {
+  background: var(--primary-light);
+  color: var(--secondary-default);
+  border: 1px solid var(--border);
+  border-right: 0;
+  border-left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  line-height: initial;
+}
+
+.checkboxContainer {
+  width: 20px;
+  height: 20px;
+  background: var(--primary-light);
+  box-sizing: border-box;
+  border: 1px solid var(--semantic-info);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkboxInactive {
+  border: 1px solid var(--semantic-info);
+  background: var(--primary-dark);
+  pointer-events: none;
+}
+
+.checkboxContainer svg {
+  width: 16px;
+  height: 16px;
+}
+
+.checkboxContainer path {
+  fill: var(--semantic-info);
+}
+
+.password {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.btn {
+  height: 24px;
+  margin: 4px 4px 4px 0;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  justify-content: space-between;
+  max-width: fit-content;
+}
+
+.btnGray {
+  background: var(--semantic-primary);
+}
+
+.btnLightGray {
+  background: var(--secondary-dark);
+}
+
+.btnYellow {
+  background: var(--semantic-warning);
+}
+
+.btnBlue {
+  background: var(--semantic-info);
+}
+
+.btnRed {
+  background: var(--semantic-danger);
+}
+
+.textEllipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

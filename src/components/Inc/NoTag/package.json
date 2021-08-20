@@ -1,0 +1,6 @@
+{
+  "name": "NoTag",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./NoTag.js"
+}

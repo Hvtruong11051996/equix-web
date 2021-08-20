@@ -1,0 +1,8 @@
+export default {
+    ACTIVE: 2,
+    INACTIVE: 0,
+    PENDING_EMAIL_VERIFICATION: 1,
+    SECURITIES_BLOCKED: 5,
+    ADMIN_BLOCKED: 4,
+    CLOSED: 3
+};

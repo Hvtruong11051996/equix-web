@@ -1,0 +1,638 @@
+@import '../../core.module.css';
+.outline {
+  width: 344px;
+  box-shadow: 0 4px 8px 0 #000;
+  background-color: var(--primary-dark);
+}
+
+.outline:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  visibility: hidden;
+}
+
+.header {
+  height: 36px;
+  background-color: var(--primary-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.headerSymbolCancel {
+  height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.11px;
+  color: var(--secondary-default);
+  display: flex;
+  padding-right: 8px;
+  align-items: center;
+}
+
+.closeForm {
+  padding-left: 8px;
+}
+
+:global(.theme-light) .rowGrid {
+  background: url(/common/light/oddLight.png) 0 -32px repeat;
+}
+
+.priceDown {
+  color: var(--sell-light) !important;
+}
+
+.priceUp {
+  color: var(--buy-light) !important;
+}
+
+.header> :last-child>* {
+  cursor: pointer;
+}
+
+.header> :last-child>*+* {
+  margin-left: 8px;
+}
+
+.price, .percent {
+  height: 16px;
+  font-size: 14px;
+  letter-spacing: -0.11px;
+  position: relative;
+}
+
+.percent {
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  margin-left: 4px;
+}
+
+.body {
+  max-height: calc(100vh - 258px);
+}
+
+.accountInfo {
+  margin: 8px 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: -0.11px;
+  text-align: center;
+  color: var(--secondary-default);
+  cursor: pointer;
+}
+
+.accountInfo>div {
+  flex: 1
+}
+
+.accountInfo :global(.dropDown .accountDropdown) {
+  width: auto !important;
+}
+
+.availableInfo {
+  display: flex;
+  color: rgba(197, 203, 206, 0.7);
+  background: var(--primary-default);
+  height: 32px;
+  margin-top: 8px;
+  padding: 0 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.availableInfo .content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 312px;
+}
+
+.line {
+  border-bottom: 1px solid var(--primary-light);
+  margin: 8px 16px 0;
+}
+
+.form {
+  display: flex;
+  position: relative;
+}
+
+.form input {
+  max-width: 100%;
+}
+
+.form :global(.datepicker-input-custom) {
+  padding: 0;
+}
+
+.form>div {
+  flex: 1;
+  min-width: 0;
+}
+
+.footer {
+  margin: 16px;
+}
+
+.title {
+  font-size: 14px;
+  letter-spacing: -0.11px;
+  text-align: center;
+  color: var(--secondary-default);
+  cursor: default;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.orderButton {
+  height: 24px;
+  width: 156px;
+  display: flex;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.orderButton>* {
+  flex: 1;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(197, 203, 206, 0.54);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.orderType {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px var(--semantic-primary);
+}
+
+.orderType>* {
+  flex: 1;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  white-space: nowrap;
+  position: relative;
+  text-transform: uppercase;
+  color: rgba(197, 203, 206);
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.rowGrid {
+  background: url(/common/dark_even_odd.png) 0 -32px repeat;
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: var(--secondary-default);
+  cursor: default;
+}
+
+.rowGrid .row {
+  margin: 0;
+  line-height: 32px;
+}
+
+.marketPrice {
+  cursor: not-allowed;
+  background: var(--primary-dark);
+}
+
+.form> :first-child .data {
+  height: 32px;
+  align-items: center;
+  margin: 0 -4px;
+}
+
+.row>* {
+  flex: 1;
+  min-width: 0;
+  margin: 0 4px;
+}
+
+.data>:first-child, .rowOrderPad>:first-child {
+  opacity: 0.7;
+  font-size: 14px;
+  letter-spacing: -0.11px;
+  color: var(--secondary-default);
+}
+
+.rowOrderPad.colorWhite>:first-child {
+  opacity: 1;
+}
+
+.data>:last-child, .rowOrderPad>:last-child {
+  font-size: 14px;
+  letter-spacing: -0.11px;
+  text-align: right;
+  color: var(--secondary-default);
+  word-break: break-word;
+  opacity: 1;
+}
+
+.amount, .duration {
+  height: auto;
+}
+
+.duration {
+  border-top: 1px var(--primary-light) solid;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.duration>*> :first-child {
+  font-size: 14px;
+  letter-spacing: -0.11px;
+  text-align: center;
+  color: var(--secondary-default);
+  display: flex;
+  justify-content: center;
+}
+
+.duration>*> :last-child {
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: var(--secondary-default);
+  margin-top: 14px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.title:before, .title:after {
+  content: '';
+  flex: 1;
+  background: linear-gradient(to right, var(--divider) 40%, rgba(255, 255, 255, 0) 0%) repeat-x bottom;
+  background-size: 8px 1px;
+  height: 1px;
+  margin: 0 16px;
+}
+
+.submitButton {
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 46px;
+}
+
+.spinner {
+  margin-right: 8px;
+}
+
+.spinner img {
+  vertical-align: middle;
+}
+
+.checkBox {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  color: #cbcece;
+  user-select: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footerSub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.buy .orderButton> :first-child.active {
+  background-color: var(--buy-light);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sell .orderButton> :last-child.active {
+  background-color: var(--sell-light);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.buy .submitButton {
+  border: 1px solid var(--buy-light);
+  background: var(--buy-light);
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.sell .submitButton {
+  border: 1px solid var(--sell-light);
+  background: var(--sell-light);
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.buy .submitButton:not(.disabled):hover {
+  background: none;
+  opacity: 1;
+  color: var(--buy-light);
+}
+
+.sell .submitButton:not(.disabled):hover {
+  background: none;
+  opacity: 1;
+  color: var(--sell-light);
+}
+
+.isModifyOrder .accountInfo, .isModifyOrder .symbolText {
+  cursor: not-allowed;
+}
+
+.accountSearchBox, .symbolSearchBox {
+  display: none;
+}
+
+.searching .accountText, .searching .symbolText {
+  display: none;
+}
+
+.searching .accountSearchBox, .searching .symbolSearchBox {
+  display: flex;
+  flex: 1;
+}
+
+.symbolSearchBox :global(.nodeSearchBox), .symbolSearchBox :global(.inputAddon), .accountSearchBox :global(.inputAddon) {
+  width: 100%;
+}
+
+.outline.expand, .outline.more {
+  width: 688px;
+}
+
+.outline.expand.more {
+  width: 1032px;
+}
+
+.outline.review {
+  width: 344px;
+}
+
+.outline.review.expand {
+  width: 688px;
+}
+
+.closePositionNewOrder {
+  margin-top: 4px;
+  margin-left: 8px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header> :last-child>.disabled {
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+.btnClear {
+  color: var(--hover-default);
+}
+
+.disabled .row input, .disabled .symbolText, .disabled .accountInfo {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.disabled .btnClear, .disabled .btnSecurityDetail, .disabled .orderButton, .disabled .data>:last-child, .disabled .rowOrderPad>:last-child {
+  cursor: not-allowed;
+  opacity: .4;
+  pointer-events: none;
+}
+
+.disabled .duration>*> :last-child, .disabled .btnClear input {
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+.connecting .submitButton, .disabled .submitButton, .submitButton.disabled {
+  opacity: 0.4 !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  cursor: not-allowed;
+  background: none !important;
+  color: #fff !important;
+}
+
+.connecting .orderButton {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.symbolText, .backgroundAccount {
+  background-color: var(--primary-light);
+  height: 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.dropDownPrice>div {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.outline :global(.inputAddon .button), .outline :global(.inputAddon .flagIcon) {
+  display: none;
+}
+
+.outline :global(.inputAddon .placeHolder) {
+  text-align: left;
+}
+
+.outline .row :global(.datepicker-input-period) {
+  border: solid 1px #141822;
+  background-color: var(--primary-default);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.outline .row :global(.dropDown> :first-child) {
+  padding: unset;
+}
+
+.outline .row :global(.dropDown) {
+  opacity: .7;
+}
+
+.textOpacity {
+  opacity: 0.7;
+}
+
+.textEllipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 8px;
+}
+
+.orderAmountWrap>div+div {
+  margin-top: 10px;
+}
+
+.searchBox {
+  padding: 0 16px;
+  height: 32px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.rowOrderPad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 32px;
+}
+
+.rowOrderPad:nth-child(odd) {
+  background: var(--primary-default);
+}
+
+.rowOrderPad:hover {
+  background: var(--menu-background-hover);
+  color: var(--menu-text-hover);
+}
+
+.rowOrderPad :global(.dropDown), .rowOrderPad :global(.inputDrop) {
+  width: 156px;
+}
+
+.datePicker {
+  line-height: 24px;
+  position: absolute;
+  width: 100%;
+  padding-right: 28px;
+  box-sizing: border-box;
+  text-align: right;
+  display: none;
+}
+
+.datePicker.block {
+  display: block;
+  z-index: 1;
+}
+
+.datePicker.block~ :global(.dropDown label) {
+  display: none;
+}
+
+.datePicker.block~ :global(.dropDown > div svg) {
+  position: relative;
+  z-index: 9;
+}
+
+.datePicker :global(.topIconCalendar) {
+  float: left;
+  /* padding-top: 5px; */
+  box-sizing: border-box;
+  height: 24px;
+  border-right: 1px solid var(--border);
+}
+
+.datePicker :global(.react-datepicker-wrapper), .datePicker :global(.react-datepicker__input-container) {
+  display: block;
+}
+
+.datePicker :global(.react-datepicker-wrapper ~ .react-datepicker-popper) {
+  transform: none !important;
+  top: unset !important;
+  left: unset !important;
+  right: -28px;
+  bottom: 17px;
+}
+
+.datePicker :global(.topIconCalendar svg) {
+  margin: 0 !important;
+  transition: none !important;
+  cursor: pointer;
+}
+
+.chart {
+  padding: 4px 16px;
+  height: 32px;
+  /* margin-top: 4px; */
+  box-sizing: border-box;
+}
+
+.bar {
+  height: 5px;
+  background-color: rgba(216, 216, 216, .7);
+  position: relative;
+}
+
+.fill {
+  background: var(--buy-light);
+  position: absolute;
+  left: 40%;
+  right: 20%;
+  height: 5px;
+}
+
+.point {
+  top: -4px;
+  right: 20%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 5px 7px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.lim {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+/* review Order */
+
+.review .body, .review .footerSub {
+  display: none;
+}
+
+.companyName {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 8px;
+}

@@ -1,0 +1,82 @@
+  .contractNoteContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contractNoteContainer .accSearchContainerParent {
+    display: flex;
+    overflow: hidden;
+  }
+  .accSearchContainer {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    overflow: hidden;
+  }
+  .search {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 12px);
+    padding-bottom: 8px;
+  }
+  .collapse {
+    display: none !important;
+  }
+  .accName {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 8px;
+    color: var(--secondary-default);
+    letter-spacing: -0.1px;
+    font-size: var(--size-4);
+  }
+  .moreOp {
+    position: absolute;
+    right: 0;
+    z-index: 110;
+    box-sizing: border-box;
+  }
+  .moreOp :global(.collapseOption) {
+    top: 100%;
+    margin-top: 5px;
+    border: 1px solid var(--semantic-primary);
+    right: 8px;
+    background: var(--primary-dark);
+}
+.moreOp :global(.collapseOption .optionContainer) {
+  border-bottom: 1px solid var(--semantic-primary);
+  padding: 8px;
+}
+  .moreOp :global(.collapseOption .agSideButtons) {
+    justify-content: flex-end;
+    height: 30px;
+    align-items: center;
+  }
+  .moreOp :global(.optionContainer) {
+    border-bottom: 1px solid var(--semantic-primary);
+  }
+  .moreOp :global(.collapseOption .agSideButtons .ag-side-button) {
+    padding-left: 8px;
+  }
+  
+  .contractNoteContainer .ag-bl-overlay {
+    height: 100% !important;
+    top: 0 !important;
+  }
+  .contractNoteContainer .ag-cell[col-id^="cnote_date"] .double-cell :first-child {
+    font-weight: 400;
+  }
+  .contractNoteContainer .symbolWlRoot>div:first-child {
+    min-width: 54px;
+  }
+  .contractNoteContainer .searchAndFilterContainer>div:first-child {
+    min-width: 136px;
+  }
+  .dateGr {
+    display: flex;
+    flex-flow: row;
+    padding-top: 8px;
+    justify-content: space-between;
+    padding-left: 8px;
+  }

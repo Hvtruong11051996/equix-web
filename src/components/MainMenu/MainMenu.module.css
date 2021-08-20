@@ -1,0 +1,96 @@
+.button {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.mainMenu {
+  background: var(--primary-dark);
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 288px;
+  max-height: calc(100vh - 56px);
+  z-index: 10005;
+}
+
+.mainMenu> :last-child {
+  overflow: auto;
+}
+
+.mainMenu,
+.subMenu {
+  background: var(--primary-light);
+}
+
+.divider {
+  background: var(--divider);
+  height: 1px;
+}
+
+.item {
+  position: relative;
+  color: var(--secondary-default);
+  height: 40px;
+  padding: 0 8px;
+  font-size: var(--size-5);
+  display: flex;
+  min-width: 264px;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s;
+}
+
+.item.active {
+  background: var(--menu-background-active);
+  color: var(--menu-text-active);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title img,
+.title svg {
+  width: 20px;
+}
+
+.text {
+  margin-left: 16px;
+  text-transform: capitalize;
+}
+
+.item.hover {
+  background: var(--menu-background-hover);
+  color: var(--menu-text-hover);
+  cursor: pointer;
+}
+
+.button svg,
+.item svg {
+  fill: var(--secondary-default);
+  transition: .3s;
+}
+
+.item.hover svg {
+  fill: var(--menu-text-hover);
+}
+
+.subMenu {
+  box-shadow: var(--shadow);
+  width: 288px;
+  display: none;
+  z-index: 10002;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: calc(100vh - 56px);
+  overflow: auto;
+  z-index: 10006;
+}

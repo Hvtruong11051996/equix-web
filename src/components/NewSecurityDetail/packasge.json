@@ -1,0 +1,6 @@
+{
+    "name": "NewSecurity",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./NewSecurity.js"
+}

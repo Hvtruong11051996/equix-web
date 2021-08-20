@@ -1,0 +1,6 @@
+{
+  "name": "ReportsTab",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ReportsTab.js"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DemoNewPicker",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DemoNewPicker.js"
+}

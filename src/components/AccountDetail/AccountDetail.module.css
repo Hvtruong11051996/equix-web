@@ -1,0 +1,139 @@
+@import '../../core.module.css';
+.container {
+    height: 100%;
+}
+
+.wrapper {
+    color: var(--secondary-default);
+    background-color: var(--primary-dark);
+    box-sizing: border-box;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.searchAccountContainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: rgba(197, 203, 206, 0.7);
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.accountLabel {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 8px;
+    color: var(--secondary-default);
+    letter-spacing: -0.1px;
+}
+
+.innerContainer {
+    flex: 1;
+    overflow: auto;
+}
+
+.innerWrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.anotherWrapper {
+    display: block;
+    justify-content: center;
+    max-height: 100%;
+    margin: 0 -8px;
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 16px;
+}
+
+.itemRow:hover {
+    background-color: #1C2733 !important;
+}
+
+.itemLabel {
+    color: rgba(197, 203, 206, 0.7);
+    white-space: nowrap;
+    font-weight: normal;
+    margin: 0;
+    font-family: Roboto;
+    display: inline-block;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+
+.itemInfo {
+    color: var(--text-color_primary_dark);
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px !important;
+    margin: 0;
+    word-wrap: break-word;
+    float: right;
+    line-height: 32px;
+}
+
+.productItem {
+    background-color: #147a88;
+    color: var(--primary-dark);
+    display: inline-flex;
+    margin-left: 16px;
+    height: 16px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 1px;
+    float: right;
+}
+
+.part:nth-child(odd) .itemRow:nth-child(even), .part:nth-child(even) .itemRow:nth-child(odd) {
+    background: var(--primary-default);
+}
+
+:global(.w800) .anotherWrapper {
+    display: flex;
+}
+
+:global(.w800) .partWrapper {
+    flex: 1;
+}
+
+:global(.w800) .part:nth-child(even) .itemRow:nth-child(even) {
+    background: unset;
+}
+
+:global(.w800) .part:nth-child(even) .itemRow:nth-child(odd) {
+    background: var(--primary-default);
+}
+
+:global(.w1280) .partWrapper {
+    display: flex;
+    flex: 1;
+}
+
+:global(.w1280) .part {
+    flex: 1;
+}
+
+:global(.w1280) .part:nth-child(even) .itemRow:nth-child(odd) {
+    background: unset;
+}
+
+:global(.w1280) .part:nth-child(even) .itemRow:nth-child(even) {
+    background: var(--primary-default);
+}

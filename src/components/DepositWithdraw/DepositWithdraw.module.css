@@ -1,0 +1,102 @@
+.collapse {
+    display: none !important;
+}
+.mainData {
+    margin: 0 8px;
+    padding: 0 8px;
+    flex: 1;
+    background: var(--primary-default);
+    height: 100%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.cell {
+    display: flex;
+    align-items: center;
+}
+.cell + .cell {
+    padding-top: 16px;
+}
+.cell > :global(.dropDown) {
+    width: 30%;
+}
+.input {
+    color: var(--secondary-default);
+    background: var(--primary-light);
+    border: 1px solid var(--border);
+    height: 18px;
+    border-right: 0;
+}
+.currency {
+    background: var(--primary-light);
+    color: var(--secondary-default);
+    border: 1px solid var(--border);
+    border-left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    line-height: initial;
+}
+.borderBottom {
+    border-bottom: 1px solid var(--border);
+    margin: 16px 0;
+}
+.note {
+    background: var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 8px 0;
+}
+.tittle {
+    font-size: var(--size-5);
+    color: var(--secondary-default);
+}
+.name {
+    font-size: var(--size-4);
+    color: var(--secondary-default);
+    width: 50%;
+    text-transform: capitalize;
+}
+.mode {
+    cursor: pointer;
+}
+.mode + .mode {
+    padding-left: 32px;
+}
+.onMode {
+    border-bottom: 2px solid var(--ascend-default);
+    width: 55px;
+    position: absolute;
+    top: 96px;
+}
+.headerGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px 8px;
+}
+.subHeaderGrid > :global(.inputAddon) {
+    width: -webkit-fill-available;
+}
+.subHeaderGrid {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.footerBtn {
+    text-transform: uppercase;
+    margin: 8px 4px;
+    height: 32px;
+  }
+  .refActBtn.disableBtn, .refActBtn .disableBtn, .footerBtn.disableBtn {
+    cursor: not-allowed;
+  }
+  .refActBtn.disableBtn .footerBtn, .refActBtn .footerBtn, .btn .footerBtn.disableBtn {
+    opacity: .54;
+    pointer-events: none;
+  }

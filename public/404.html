@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/404.css"> -->
+    <link rel="icon">
+    <title>404 pages</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        #container>div {
+            flex: 1;
+        }
+
+        .top-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-logo {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .header-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .header-logo>img {
+            margin: 56px 0 0 64px;
+            /* width: 476px; */
+            height: 68px;
+        }
+
+        .header-img {
+            flex: 1;
+        }
+
+        .bottom-content {
+            position: absolute;
+            right: 0;
+            top: 65%;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            margin-top: -30px;
+            text-align: center;
+        }
+
+        .bottom-content::before {
+            content: '';
+            display: block;
+            background: #e6e6e6;
+            width: 300vw;
+            left: -100vw;
+            height: 300vw;
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .message-big {
+            font-size: 40px;
+            padding-top: 40px;
+        }
+
+        .message-normal {
+            font-size: 16px;
+            margin: 20px;
+        }
+
+        .message-button {
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            background: black;
+            color: white;
+            font-size: 24px;
+            text-decoration: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class='top-content'>
+            <div class='header-logo'>
+                <img id='404Img' alt=''>
+            </div>
+            <div class='header-img'>
+                <img src='common/group.png' alt='not found'>
+            </div>
+        </div>
+        <div class='bottom-content'>
+            <div class='message-big'>Sorry, page not found</div>
+            <div class='message-normal'>Looks like the page you are looking for is missing or longer available.</div>
+            <div class='message-normal'>Click below to go home page.</div>
+            <a href='/' class='message-button'>Back to home</a>
+        </div>
+
+    </div>
+</body>
+
+<script type='module'>
+    import config from '/config.js'
+    try {
+        fetch(`${config.storageUrl}/web.json?alt=media&${window.ver}`)
+            .then(response => response.json())
+            .then((config) => {
+                if (!config) return
+                const envUrl = (location.href + '').match(/env=([^&?#]*)/)
+                const imag = document.getElementById('404Img')
+                const logo = config[config.common.project].branding.logoLight + (`&${window.ver}`)
+                imag && (imag.src = logo);
+            })
+    } catch (eror) { }
+</script>
+
+</html>

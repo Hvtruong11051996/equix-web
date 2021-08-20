@@ -1,0 +1,81 @@
+form {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.formInput {
+  height: 40px;
+  line-height: 40px;
+}
+
+.formInput input {
+  font-size: var(--size-4);
+}
+
+.formCheckbox {
+  font-size: var(--size-4);
+  margin-top: 16px;
+}
+
+.formCheckbox>div {
+  height: 24px;
+  width: 24px;
+}
+
+.field+.field {
+  margin-top: 8px;
+}
+
+.submit {
+  background: var(--ascend-default);
+  color: var(--secondary-light);
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  height: 40px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+  font-size: var(--size-4);
+  text-transform: capitalize;
+}
+
+.submit span {
+  text-transform: uppercase;
+}
+
+.submit.disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.submit:hover {
+  background: var(--ascend-dark);
+}
+
+.ref {
+  margin-top: 16px;
+  font-size: var(--size-4);
+  line-height: 14px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--hover-default);
+}

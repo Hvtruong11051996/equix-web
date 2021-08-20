@@ -1,0 +1,6 @@
+{
+    "name": "PopupEditor",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./PopupEditor.js"
+}

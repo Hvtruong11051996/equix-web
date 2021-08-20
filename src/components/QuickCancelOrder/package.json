@@ -1,0 +1,6 @@
+{
+    "name": "QuickCancelOrder",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./QuickCancelOrder.js"
+}

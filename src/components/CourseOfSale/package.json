@@ -1,0 +1,6 @@
+{
+  "name": "CourseOfSale",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CourseOfSale.js"
+}

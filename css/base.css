@@ -1,0 +1,121 @@
+.__vertical, .__horizontal {
+    background: var(--background-scroll);
+    padding: 0 !important;
+    z-index: 3000;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--secondary-light);
+    box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--secondary-light);
+}
+
+svg {
+    fill: var(--secondary-default);
+}
+
+:-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+:-moz-selection {
+    text-shadow: none;
+}
+
+::selection {
+    text-shadow: none;
+}
+
+::selection {
+    background: var(--secondary-default);
+    color: var(--primary-default);
+}
+
+#modal, dropDownContent#modal {
+    height: calc(100%);
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10003;
+    top: 0;
+    left: 0;
+}
+
+#modal>div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+    /* pointer-events: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3002;
+}
+
+#modal>div:not(.allowNested) {
+    opacity: 0;
+}
+
+#modal>div.closing {
+    opacity: 0;
+}
+
+#modal>div:last-child {
+    pointer-events: unset;
+    opacity: 1;
+}
+
+#modal:empty {
+    display: none;
+}
+
+.lm_header .lm_controls {
+    padding-bottom: 5px;
+}
+
+.lm_tabdropdown_list:hover {
+    display: block !important;
+}
+
+input[type="number"]:-webkit-inner-spin-button, input[type="number"]:-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+body * {
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+@keyframes nodeVisible {
+    from {
+        opacity: 0.99;
+    }
+    to {
+        opacity: 1;
+    }
+}

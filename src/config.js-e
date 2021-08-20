@@ -1,0 +1,7 @@
+const config = {
+    version: '202008190000',
+    urlWebConfig: location.origin + '/web.json',
+    agridType: 'single',
+    chartVersion: '1.1'
+};
+export default config;

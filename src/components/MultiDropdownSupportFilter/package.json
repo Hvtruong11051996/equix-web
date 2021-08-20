@@ -1,0 +1,6 @@
+{
+    "name": "MultiDropdownSupportFilter",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./MultiDropdownSupportFilter.js"
+}

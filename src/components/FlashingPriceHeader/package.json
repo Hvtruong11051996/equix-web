@@ -1,0 +1,6 @@
+{
+    "name": "FlashingPriceHeader",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./FlashingPriceHeader.js"
+}

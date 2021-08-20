@@ -1,0 +1,129 @@
+{
+  "abn": {
+    "name": "ABN News Wire",
+    "key": "abn",
+    "logo": "/img/vendor-logo/abn.png",
+    "type": "image"
+  },
+  "asxh": {
+    "name": "ASX Header",
+    "key": "asxh",
+    "logo": "/img/vendor-logo/asxh.png",
+    "type": "image"
+  },
+  "brr": {
+    "name": "BRR - Boardroom Radio",
+    "key": "brr",
+    "logo": "/img/vendor-logo/brr.png",
+    "type": "image"
+  },
+  "ccn": {
+    "name": "Marketwire",
+    "key": "ccn",
+    "logo": "/img/vendor-logo/ccn.png",
+    "type": "image"
+  },
+  "cxan": {
+    "name": "Chi-X Australia News",
+    "key": "cxan",
+    "logo": "/img/vendor-logo/cxan.png",
+    "type": "image"
+  },
+  "dbxn": {
+    "name": "Deutsche Bourse Market News",
+    "key": "dbxn",
+    "logo": "/img/vendor-logo/dbxn.png",
+    "type": "image"
+  },
+  "edn": {
+    "name": "Edison News",
+    "key": "edn",
+    "logo": "/img/vendor-logo/edn.png",
+    "type": "image"
+  },
+  "edtvn": {
+    "name": "Edison TV News",
+    "key": "edtvn",
+    "logo": "/img/vendor-logo/edtvn.png",
+    "type": "image"
+  },
+  "erxn": {
+    "name": "Euronext Market News",
+    "key": "erxn",
+    "logo": "/img/vendor-logo/erxn.png",
+    "type": "image"
+  },
+  "g": {
+    "name": "ASX Company Reports - Signal G",
+    "key": "g",
+    "logo": "/img/vendor-logo/g.png",
+    "type": "image"
+  },
+  "ire": {
+    "name": "IRESS Information Announcements",
+    "key": "ire",
+    "logo": "/img/vendor-logo/ire.png",
+    "type": "image"
+  },
+  "irp": {
+    "name": "IR Plus Exchange News",
+    "key": "irp",
+    "logo": "/img/vendor-logo/irp.png",
+    "type": "image"
+  },
+  "lwm": {
+    "name": "Livewire",
+    "key": "lwm",
+    "logo": "/img/vendor-logo/lwm.png",
+    "type": "image"
+  },
+  "nsx": {
+    "name": "NSX Company Reports",
+    "key": "nsx",
+    "logo": "/img/vendor-logo/nsx.png",
+    "type": "image"
+  },
+  "omxn": {
+    "name": "OMX Market News",
+    "key": "omxn",
+    "logo": "/img/vendor-logo/omxn.png",
+    "type": "image"
+  },
+  "opbr": {
+    "name": "Open Briefing",
+    "key": "opbr",
+    "logo": "/img/vendor-logo/opbr.png",
+    "type": "image"
+  },
+  "pds": {
+    "name": "ASX CommNews - PDF",
+    "key": "pds",
+    "logo": "/img/vendor-logo/pds.png",
+    "type": "image"
+  },
+  "rcrn": {
+    "name": "RCR News",
+    "key": "rcrn",
+    "logo": "/img/vendor-logo/rcrn.png",
+    "type": "image"
+  },
+  "sps": {
+    "name": "South Pacific Stock Exchange Comp Rep",
+    "key": "sps",
+    "logo": "/img/vendor-logo/sps.png",
+    "type": "image"
+  },
+  "fnn": {
+    "name": "Finance News Network",
+    "key": "fnn",
+    "type": "text"
+  },
+  "anuk": {
+    "name": "Alliance News UK Professional",
+    "key": "anuk",
+    "type": "text"
+  },
+  "common": {
+    "version": "20200514"
+  }
+}

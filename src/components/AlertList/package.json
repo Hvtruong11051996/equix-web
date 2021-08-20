@@ -1,0 +1,6 @@
+{
+    "name": "AlertList",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./AlertList.js"
+}

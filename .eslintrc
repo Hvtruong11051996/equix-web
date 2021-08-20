@@ -1,0 +1,45 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint-config-standard"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [
+            "off",
+            2
+        ],
+        "no-tabs": "off",
+        "space-before-function-paren": "off",
+        "handle-callback-err": "off",
+        "linebreak-style": 0,
+        //        "linebreak-style": [
+        //            "error",
+        //            "unix"
+        //        ],
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        // "space-before-function-paren": [
+        //     "error",
+        //     {
+        //         "anonymous": "always",
+        //         "named": "never",
+        //         "asyncArrow": "always"
+        //     }
+        // ],
+        "no-console": "off",
+        "no-unreachable": "warn",
+        "no-undef": "off",
+        "semi": "off",
+        "no-return-assign": "off",
+        "no-unused-vars": "off"
+    }
+}

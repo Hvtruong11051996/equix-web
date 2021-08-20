@@ -1,0 +1,113 @@
+@import '../../core.module.css';
+
+.footerRoot :global(.inputAddon .button) {
+  display: none;
+}
+
+.footerRoot :global(.inputAddon .placeHolder) {
+  text-align: left;
+}
+
+.afterLogin {
+  justify-content: left !important;
+}
+
+.afterLogin .row {
+  padding-right: 24px;
+}
+
+.widthSearchAccount {
+  max-width: 312px;
+}
+
+.accountInfo :global(.dropDown .accountDropdown) {
+  width: 312px !important;
+}
+
+.accountSearchBox :global(.inputAddon),
+.accountSearchBox :global(.dropDown) {
+  width: 312px;
+}
+
+.footerRoot {
+  z-index: 1006;
+  background-color: var(--primary-dark);
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
+  padding: 0 8px;
+  margin-top: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-default);
+  cursor: default;
+}
+
+.row>* {
+  min-width: 0;
+}
+
+.data {}
+
+.data>:first-child {
+  opacity: 0.7;
+  letter-spacing: -0.11px;
+  color: var(--secondary-default);
+  padding-right: 8px;
+  white-space: nowrap;
+}
+
+.data>:last-child {
+  letter-spacing: -0.11px;
+  text-align: right;
+  color: var(--secondary-default);
+  word-break: break-word;
+  opacity: 1;
+}
+
+.accountInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.11px;
+  text-align: center;
+  color: var(--secondary-default);
+  cursor: pointer;
+  width: 312px;
+}
+
+.accountInfo>div {
+  flex: 1
+}
+
+.searching .accountText {
+  display: none;
+}
+
+.accountSearchBox {
+  display: none;
+}
+
+.searching .accountSearchBox {
+  display: flex;
+}
+
+.backgroundAccount {
+  background-color: var(--primary-light);
+  padding: 4px 8px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.textEllipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

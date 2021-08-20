@@ -1,0 +1,6 @@
+{
+  "name": "radio",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Radio.js"
+}

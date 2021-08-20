@@ -1,0 +1,42 @@
+.container {
+    width: 0;
+    position: absolute;
+    right: 0;
+    height: 40px;
+}
+
+.errorContainer {
+    position: absolute;
+    height: 100%;
+    width: max-content;
+    padding: 0 8px;
+    opacity: 0;
+    display: none;
+    transition: .3s;
+    margin-left: 10px;
+    background: var(--semantic-danger);
+    color: var(--secondary-light);
+}
+
+.active .errorContainer {
+    opacity: 1;
+    display: flex;
+}
+
+.error {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.error:before {
+    margin: auto;
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    left: -16px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid var(--semantic-danger);
+    border-bottom: 10px solid transparent;
+  }

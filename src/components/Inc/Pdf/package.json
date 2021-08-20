@@ -1,0 +1,6 @@
+{
+  "name": "Pdf",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Pdf.js"
+}

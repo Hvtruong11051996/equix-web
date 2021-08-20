@@ -1,0 +1,857 @@
+#form-error {
+  padding: 8px;
+  opacity: .86;
+  pointer-events: none;
+  border-radius: 3px;
+}
+
+#form-error[style*=left]:before,
+#form-error[style*=right]:before {
+  content: ' ';
+  display: block;
+  border-style: solid;
+  position: absolute;
+  top: 7px;
+}
+
+#form-error[style*=right]:before {
+  border-width: 8px 0 8px 8px;
+  right: -8px;
+}
+
+#form-error[style*=left]:before {
+  border-width: 8px 8px 8px 0;
+  left: -8px;
+}
+
+.qe-form input {
+  outline: none;
+  width: 100%;
+  padding: 5px 8px;
+  box-sizing: border-box;
+}
+
+.qe-form .dropDown {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+}
+
+.qe-form .dropDown .list>div {
+  line-height: 24px;
+}
+
+.qe-form-cell {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  align-items: center;
+}
+
+.qe-form-cell>div {
+  display: flex;
+}
+
+.qe-form-cell> :first-child {
+  flex: 1;
+}
+
+.qe-form-cell> :last-child {
+  flex: 2;
+  min-width: 0;
+}
+
+.qe-form-cell> :last-child {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.qe-form-cell> :last-child .qe-input {
+  flex: 1;
+}
+
+.qe-form-row {
+  display: flex;
+}
+
+/* tuan */
+.large .qe-form .qe-form-row,
+.large .qe-form input {
+  font-size: 15px;
+}
+
+.large .qe-form .qe-form-header {
+  font-size: 13px;
+}
+
+.small .qe-form .qe-form-row,
+.small .qe-form input {
+  font-size: 13px;
+}
+
+.small .qe-form .qe-form-header {
+  font-size: 11px;
+}
+
+.medium .qe-form .qe-form-row,
+.medium .qe-form input {
+  font-size: 14px;
+}
+
+.medium .qe-form .qe-form-header {
+  font-size: 12px;
+}
+
+.qe-form {
+  width: 100%;
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+.qe-form .qe-form-row {
+  display: table-row;
+}
+
+.qe-form .qe-form-row.qe-form-header>div {
+  line-height: 32px;
+  padding: 0 8px;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.qe-form .qe-form-row:not(.qe-form-header):hover {
+  cursor: pointer;
+}
+
+.qe-form .qe-form-row .qe-form-cell {
+  display: table-cell;
+  min-width: 95px;
+  padding: 8px;
+  max-width: 120px;
+  vertical-align: middle;
+}
+
+.userGroupManagement.qe-widget .qe-form .qe-form-row .qe-form-cell {
+  min-width: 50px;
+  max-width: 50px;
+}
+
+.userGroupManagement.qe-widget .qe-form .qe-form-row .qe-form-cell:first-child {
+  min-width: 250px;
+  max-width: unset;
+  padding-left: 0;
+}
+
+.userGroupManagement.qe-widget .qe-form .qe-form-row.qe-form-header .qe-form-cell:first-child {
+  padding-left: 8px;
+}
+
+/* #portfolioRoot .ag-column-drop.ag-column-drop-row-group, */
+/* .user-man-wrap.qe-widget .ag-column-drop.ag-column-drop-row-group {
+      margin-top: 8px
+  } */
+.businessLogContainer .ag-theme-fresh .ag-column-drop.ag-font-style.ag-column-drop-horizontal.ag-column-drop-row-group div:first-child span,
+#portfolioRoot .ag-theme-fresh .ag-column-drop.ag-font-style.ag-column-drop-horizontal.ag-column-drop-row-group div:first-child span,
+#orderRoot .ag-theme-fresh .ag-column-drop.ag-font-style.ag-column-drop-horizontal.ag-column-drop-row-group div:first-child span,
+.user-man-wrap.qe-widget .ag-theme-fresh .ag-column-drop.ag-font-style.ag-column-drop-horizontal.ag-column-drop-row-group div:first-child span {
+  top: 8px
+}
+
+.qe-form .qe-form-row .qe-form-cell>div {
+  line-height: 24px;
+  padding: 0 8px;
+  height: 24px;
+}
+
+.qe-form .qe-form-row .qe-form-cell:last-child,
+.qe-form .qe-form-row .qe-form-cell:last-child div {
+  text-align: right;
+}
+
+.qe-form .qe-form-row .qe-form-cell .qe-gray {
+  pointer-events: none;
+}
+
+.qe-form .qe-form-row .qe-form-cell div[class^='qe-dropdown'] {
+  padding: 0;
+  width: 100%;
+}
+
+.qe-form .qe-form-row .qe-form-cell div[id^='dropDownBoxSelector'] svg {
+  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px)
+}
+
+.qe-form .qe-form-row .qe-form-cell label.tag:hover {
+  cursor: pointer !important;
+}
+
+.qe-form .qe-form-row .qe-form-cell label.tag {
+  padding: 0 8px;
+  line-height: 24px;
+  width: auto;
+  height: 24px;
+  display: inline-block;
+}
+
+.qe-form .qe-form-row .qe-form-cell label.tag+.tag {
+  margin-left: 8px;
+}
+
+.qe-form .qe-form-row .qe-form-cell .btn-group {
+  height: 32px;
+  display: flex;
+}
+
+.qe-form .qe-form-row .qe-form-cell img {
+  filter: brightness(0) invert(1)
+}
+
+.qe-form-header {
+  height: 32px;
+}
+
+.qe-loading {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}
+
+.userGroupManagement .qe-form .qe-form-row .qe-form-cell:last-child {
+  text-align: left;
+}
+
+.userGroupManagement .qe-form .qe-form-row .qe-form-cell {
+  min-width: unset;
+  max-width: unset;
+}
+
+.userGroupManagement .qe-form .qe-form-row .qe-form-cell>div {
+  align-items: center;
+  text-overflow: ellipsis;
+}
+
+.userGroupManagement.qe-widget .scroll-wrap {
+  height: 100% !important;
+}
+
+.after-before:after,
+.after-before:before {
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 200%;
+  height: 32px;
+}
+
+.manage_advisor_wrapCell {
+  position: relative;
+}
+
+.manage_advisor_wrapCell .manage_advisor {
+  position: absolute;
+  top: 0;
+  height: 32px;
+  line-height: 32px;
+}
+
+.qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell .qe-create-user-passwordCol>div:first-child {
+  padding-right: 8px;
+  margin-right: -8px;
+}
+
+.qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell .box-text {
+  padding-left: 8px;
+  margin-left: -8px;
+}
+
+.box-text.after-before:after {
+  position: absolute;
+  top: 0;
+  height: 32px;
+  width: 100%;
+}
+
+.qe-col-passwordRow .qe-form-password-row.after-before:before {
+  z-index: 0;
+  left: 0;
+}
+
+.Create_User_List_Account,
+.qe-form-row-right.bg-red,
+.qe-form-row-left {
+  z-index: 1;
+}
+
+.qe-create-user-passwordCol {
+  position: unset;
+}
+
+.qe-create-user-passwordCol>div:nth-child(2):before,
+.qe-create-user-passwordCol>div:last-child:before {
+  z-index: unset;
+}
+
+.box-text.after-before {
+  z-index: 1;
+  margin-top: -65px;
+}
+
+.qe-form .qe-form-row .qe-form-cell .qe-label-gray,
+.qe-form .qe-form-row .qe-form-cell .qe-label-green {
+  height: 24px;
+  align-items: center;
+  text-transform: uppercase;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.qe-form .qe-form-row .qe-form-cell div[id^='dropDownBoxSelector'],
+.qe-form .qe-form-row .qe-form-cell div[id^='itemDropDown'] {
+  text-transform: uppercase;
+}
+
+.myHidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* *******************New Create User && User Details********************* */
+.footer {
+  z-index: 1;
+}
+
+.qe-form-row-right.bg-red {
+  height: 22px;
+  width: 75px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.qe-form-cell.password-field-container.password_wrapCell .qe-form-input-btn {
+  cursor: pointer;
+}
+
+.footer .actionBtn.bg-green.bg-green-hover {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.manage_advisor_wrapCell>div:last-child .dropDown {
+  margin-right: 15px
+}
+
+.qe-form-cell.user_login_id_wrapCell input,
+.qe-form-cell.phone_wrapCell input,
+.qe-form-cell.full_name_wrapCell input {
+  text-align: right;
+}
+
+.qe-form .qe-form-cell input {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.qe-form .qe-form-cell {
+  padding-left: 8px;
+}
+
+.qe-form-password-row label {
+  text-align: left;
+  padding-top: 3px;
+  width: 100% !important;
+}
+
+.qe-form-password-row>div:first-child {
+  display: block !important;
+}
+
+.qe-form .qe-header-row {
+  height: 32px;
+  padding-left: 8px;
+  line-height: 32px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.textAreaForm_wrapCell>div:nth-child(2) {
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-right: 8px;
+}
+
+.qe-checkbox-password>div>div {
+  display: flex;
+  align-items: center;
+}
+
+.qe-checkbox-password>div>div>div {
+  width: 0 !important;
+}
+
+.text-overflow {
+  white-space: unset;
+}
+
+.qe-form-cell.manage_advisor_wrapCell .inputAddon,
+.qe-form-cell.Create_User_List_Account_wrapCell .inputAddon {
+  border: none;
+}
+
+.qe-createUser-password-evenOdd:after {
+  left: 0%;
+}
+
+.qe-createUser-password-evenOdd:before {
+  left: -100%;
+}
+
+.qe-form-cell.Create_User_List_Account_wrapCell {
+  align-items: flex-start;
+}
+
+.qe-wrapAccount {
+  margin-top: 8px;
+}
+
+.qe-form-password-row.qe-account-id-even:after {
+  margin-left: calc(-100%/3 - 3px);
+}
+
+.w960 .qe-form-password-row.qe-account-id-even:after {
+  margin-left: calc(-100%/6 - 5px);
+}
+
+/* ******************* 1 colum ********************* */
+.qe-form .qe-header-row {
+  box-sizing: border-box;
+}
+
+.qe-form-cell.note_wrapCell {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.Create_User_List_Account_wrapCell .Create_User_List_Account,
+.Create_User_List_Account_wrapCell .qe-form-row-left .qe-form-account-box.bg-gray {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+.qe-form-cell {
+  padding-right: 8px;
+}
+
+.qe-col-passwordRow .qe-form-row-left,
+.qe-col-passwordRow {
+  overflow: hidden;
+}
+
+.manage_advisor_wrapCell .searchAccountContainer .inputAddon .placeHolder {
+  text-align: left;
+  width: calc(100% - 53px);
+}
+
+.note_wrapCell>div:last-child textarea {
+  width: 100%;
+}
+
+/* ******************* 2 colum ********************* */
+
+.w960 .qe-form .qe-form-cell {
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-flex;
+}
+
+.w960 .qe-form .textAreaForm_wrapCell,
+.w960 .qe-form .Create_User_List_Account_wrapCell {
+  width: 100%
+}
+
+.w960 .password-field-container_wrapCell {
+  margin-left: 50%
+}
+
+.w960 .manage_advisor_wrapCell {
+  width: 100% !important;
+}
+
+.w960 .manage_advisor_wrapCell>div:last-child .searchAccountContainer {
+  margin-left: 2px
+}
+
+.w960 .note_wrapCell,
+.w960 .manage_wrapCell {
+  width: 100% !important
+}
+
+.w960 .qe-form-cell.user_login_id_wrapCell,
+.w960 .qe-form-cell.email_template_wrapCell,
+.w960 .qe-form-cell.api_access_wrapCell,
+.w960 .qe-form-cell.status_wrapCell {
+  padding-left: 16px;
+}
+
+.w960 .qe-form-cell.full_name_wrapCell,
+.w960 .qe-form-cell.phone_wrapCell,
+.w960 .qe-form-cell.access_method_wrapCell,
+.w960 .qe-form-cell.user_group_wrapCell,
+.w960 .qe-form-cell.role_group_wrapCell {
+  padding-right: 16px;
+}
+
+.w960 .qe-form-cell.api_access_wrapCell,
+.w960 .qe-form-cell.status_wrapCell,
+.w960 .qe-form-cell.user_login_id_wrapCell,
+.w960 .qe-form-cell.note_wrapCell,
+.w960 .qe-form-cell.Create_User_List_Account_wrapCell,
+.w960 .qe-form-cell.manage_advisor_wrapCell,
+.w960 .qe-form-cell.email_template_wrapCell {
+  padding-right: 8px
+}
+
+.w960 .qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell {
+  padding-left: 16px;
+  padding-right: 8px;
+  position: relative;
+  align-items: flex-start;
+}
+
+.w960 .note_wrapCell>div:last-child,
+.w960 .manage_wrapCell>div:last-child,
+.w960 .manage_advisor_wrapCell>div:last-child,
+.w960 .Create_User_List_Account_wrapCell>div:last-child {
+  flex: 5;
+}
+
+.qe-form-cell.status_wrapCell .status {
+  margin-right: unset;
+}
+
+.w960 .qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell>div:nth-child(2)>div:not(.qe-createUser-password-evenOdd):after {
+  left: 0%;
+}
+
+.w960 .qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell>div:nth-child(2)>div:first-child {
+  z-index: 0;
+}
+
+.w960 .qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell>div:nth-child(2)>div:not(.qe-createUser-password-evenOdd):before {
+  left: -100%;
+}
+
+.w960 .qe-form-cell.role_group_wrapCell {
+  float: left;
+}
+
+.w960 .password_wrapCell .box-text {
+  padding-left: 16px;
+  margin-left: -16px
+}
+
+.w960 .qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell .box-text {
+  padding-left: 16px;
+  margin-left: -16px;
+}
+
+.w960 .qe-form-cell.qe-height-1-3.password-field-container.password_wrapCell .qe-create-user-passwordCol>div:first-child {
+  padding-right: 8px;
+  margin-right: -8px;
+}
+
+.w960 .qe-form-cell.role_group_wrapCell>div:last-child {
+  z-index: 1;
+}
+
+.password-field-container.password {
+  z-index: 3;
+}
+
+.w960 .qe-form-cell.role_group_wrapCell .role_group,
+.w960 .qe-form-cell.role_group_wrapCell .box-overflow {
+  z-index: 1
+}
+
+.w960 .qe-empty-row {
+  height: 32px;
+}
+
+.navbar .btn-group span {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.w640 .navbar .btn-group span {
+  display: flex;
+  margin-left: 8px;
+}
+
+/* {
+    display: flex;
+    flex-direction: column;
+  } */
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer .actionBtn {
+  display: flex;
+  flex: 1;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.footer .actionBtn.btn-create {
+  height: 62px;
+  margin: 0 8px !important;
+  border-radius: 2px;
+}
+
+.footer .line {
+  margin-bottom: 0;
+}
+
+.footer .btnWrapper {
+  padding: 16px 0 8px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.btnWrapper>div {
+  cursor: pointer;
+}
+
+.qe-form-cell {
+  height: unset;
+  min-height: 32px;
+}
+
+.qe-form input {
+  width: unset;
+  flex: 1;
+}
+
+.password-field-container.password_wrapCell input {
+  width: 100%;
+}
+
+.qe-form input.qe-input-checkbox {
+  flex: unset;
+  width: 16px;
+}
+
+.qe-form-title {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.qe-form-password-row,
+.qe-form-account-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 32px;
+}
+
+.qe-form-row-left,
+.qe-form-row-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.qe-form-row-right {
+  padding: 0 8px 0 0;
+}
+
+.qe-form-input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+.password-field-container {
+  height: 96px;
+  line-height: 32px;
+}
+
+.label-single-line {
+  text-align: left;
+}
+
+.search-account-btn-add {
+  position: absolute;
+  padding: 0 8px;
+  height: 20px;
+  right: 1px;
+  top: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.search-account-btn-add img {
+  width: 16px;
+  height: 16px;
+}
+
+.qe-form-account-box {
+  display: block;
+  width: auto;
+  padding: 2px 8px;
+  margin-right: 8px;
+}
+
+.qe-form-account-box.bg-gray {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.qe-form-account-row .dropDown {
+  width: 45%;
+}
+
+.qe-form-account-row .dropDown> :first-child> :first-child {
+  text-align: left;
+}
+
+.qe-form-cell .inputAddon .placeHolder {
+  width: unset;
+}
+
+.qe-form-cell textarea {
+  outline: none;
+  width: 100%;
+  padding: 5px 8px;
+  box-sizing: border-box;
+}
+
+.btnWrapper.disableBtn .actionBtn {
+  pointer-events: none;
+}
+
+.actionBtn.disableBtn {
+  cursor: not-allowed;
+}
+
+.actionBtn img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.lm_item_container:not(.w640) .actionBtn img.icon,
+.actionBtn img.icon-response {
+  display: none;
+  margin: 0
+}
+
+.lm_item_container:not(.w640) .actionBtn img.icon-response {
+  display: block;
+  margin: 0
+}
+
+.lm_item_container:not(.w640) .actionBtn img.icon-response+span {
+  display: none;
+}
+
+.lm_item_container:not(.w640) .actionBtn span {
+  text-align: center;
+  line-height: 24px;
+}
+
+.footer .clearAllDataGuest {
+  padding-bottom: 16px;
+  padding-top: 4px;
+}
+
+.searchSuggest>div:last-child {
+  min-height: 100%;
+}
+
+.nodeSearchBox .searchSuggest>div:last-child,
+.watchlistRoot .searchSuggest>div:last-child {
+  min-height: calc(100% - 33px);
+}
+
+.emptyListSuggest {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.w640 .footer .btnWrapper span {
+  display: unset !important;
+}
+
+.footer .btnWrapper .btn-create span {
+  display: unset;
+}
+
+.qe-checkbox-password-disable {
+  opacity: 0.54;
+}
+
+div.qe-form-cell.status_wrapCell:hover,
+div.qe-form-cell.status_wrapCell:hover,
+div.qe-form-cell.Notes_wrapCell:hover,
+/*   div.qe-form-cell.manage_advisor_wrapCell:hover, */
+/*   div.qe-form-cell.Create_User_List_Account_wrapCell:hover, */
+div.qe-form-cell.manage_wrapCell:hover,
+div.qe-form-cell.Management_wrapCell:hover,
+div.qe-form-cell.user_group_wrapCell:hover,
+div.qe-form-cell.api_access_wrapCell:hover,
+div.qe-form-cell.access_method_wrapCell:hover,
+div.qe-form-cell.User_Information_wrapCell:hover,
+div.qe-form-cell.email_template_wrapCell:hover,
+div.qe-form-cell.full_name_wrapCell:hover,
+div.qe-form-cell.user_login_id_wrapCell:hover,
+div.qe-form-cell.phone_wrapCell:hover,
+div.qe-form-cell.note_wrapCell:hover,
+.qe-form-cell.role_group_wrapCell:hover,
+.qe-form-cell.Create_User_List_Account_wrapCell:hover,
+div.qe-form-cell.full_name_wrapCell:hover {
+  background: var(--menu-background-hover) !important;
+  color: var(--menu-text-hover) !important;
+}
+
+.w960 .qe-form-cell:nth-child(4n + 1),
+.w960 .qe-form-cell:nth-child(4n + 2) {
+  background: var(--primary-default) !important;
+}
+
+.w960 .nationality_wrapCell {
+  height: 64px;
+}
+
+.qe-form-cell.role_group_wrapCell .dropDown {
+  text-transform: uppercase;
+}
