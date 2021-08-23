@@ -690,10 +690,10 @@ export class UserAccount extends Component {
   }
   render() {
     return (
-      <div className='user-client-man-container'>
+      <div className='user-client-man-container qe-widget'>
         {this.renderTabs()}
         <div className={`header-wrap isMoreOption flex ${this.collapse ? 'collapse' : ''}`}>
-          <div className='navbar more' style={{ width: '100%' }}>
+          <div className='navbar more' style={{ width: '100%', display: 'block' }}>
             <FilterBox
               value={this.filterText}
               onChange={this.onChangeText}
@@ -714,7 +714,6 @@ export class UserAccount extends Component {
             this.setData2 = fn.setData
             this.exportCSV = fn.exportCsv
             this.resetFilter = fn.resetFilter
-            this.autoSize = fn.autoSize
             this.showColumnMenu = fn.showColumnMenu
             this.showFilterMenu = fn.showFilterMenu
             this.autoSize = fn.autoSize
@@ -723,7 +722,6 @@ export class UserAccount extends Component {
           columns={this.getColums()}
           autoFit={true}
         />
-
       </div>
     )
   }
