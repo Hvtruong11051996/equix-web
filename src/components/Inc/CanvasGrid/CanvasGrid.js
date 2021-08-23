@@ -105,7 +105,6 @@ export default class CanvasGrid extends React.Component {
     })
     this.initDragAnimation();
     this.dicFlags = {};
-    this.state = { listData: [] };
   }
 
   initDragAnimation() {
@@ -578,8 +577,6 @@ export default class CanvasGrid extends React.Component {
         this._dicData[this.fnKey(data)] = data;
       })
       this._listData = listData;
-      // this.listDataClient(this._listData);
-      console.log(' listData :>> ', listData);
     }
     if (this.props.getFilterOnSearch) {
       this._dataAfterAction = this._listData
